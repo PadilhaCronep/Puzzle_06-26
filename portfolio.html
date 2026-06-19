@@ -1408,6 +1408,59 @@
         <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative min-h-[400px]">
           
        
+          <!-- Card 1 (LIMAO ROSA - LP / BRAND) -->
+          <div data-category="lp" class="portfolio-item glass-panel-dark p-6 flex flex-col justify-between hover:border-puzzle-yellow/50 transition-all duration-300 relative overflow-hidden group bg-gradient-to-b from-zinc-900/40 to-zinc-950/80 reveal-up" style="transition-delay: 20ms;">
+            <div class="absolute top-0 left-0 w-full h-[2px] bg-puzzle-yellow scale-x-50 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+            <div class="flex flex-col h-full justify-between">
+              <div>
+                <!-- Project Image -->
+                <div class="case-media h-40 mb-5 rounded-xl border border-white/5 overflow-hidden relative transition-all duration-300 group-hover:border-puzzle-yellow/30">
+                  <img loading="lazy" decoding="async" src="https://bandalimaorosa.com/images/album-chao-pintado-de-rubi.jpg" alt="Limão Rosa - Chão Pintado de Rubi" class="w-full h-full object-cover opacity-75 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+                </div>
+
+                <div class="flex justify-between items-center mb-4">
+                  <span class="font-mono text-[10px] text-puzzle-yellow uppercase tracking-widest">// Brand + Site Oficial</span>
+                  <span class="px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider rounded bg-puzzle-yellow/15 text-puzzle-yellow font-extrabold border border-puzzle-yellow/20">SITE 2026</span>
+                </div>
+                <h3 class="font-title text-xl uppercase mb-2 text-white group-hover:text-puzzle-yellow transition-colors duration-300">Limão Rosa</h3>
+                <p class="font-subtitle text-xs text-zinc-400 mb-4 leading-relaxed line-clamp-2">
+                  Site oficial para banda paulistana de rock psicodélico, com feeling autoral, linguagem de marca e rota clara para música, agenda, ingressos e comunidade.
+                </p>
+
+                <!-- Quick Metric Banner -->
+                <div class="flex items-center gap-3 px-3 py-2 bg-zinc-900/60 rounded-xl border border-white/5 mb-4">
+                  <div class="w-1.5 h-1.5 bg-puzzle-yellow rounded-full animate-pulse shadow-[0_0_8px_#fdcb5d]"></div>
+                  <span class="font-mono text-[10px] text-zinc-300 uppercase tracking-tight">Entrega: Site Oficial + Comunicação de Marca</span>
+                </div>
+              </div>
+
+              <div>
+                <div class="border-t border-white/5 pt-3 font-mono text-[10px] text-zinc-500 space-y-0.5 mb-4">
+                  <p><span class="text-puzzle-yellow font-bold">Problema crítico</span> Organizar lançamento, agenda e canais sem perder a personalidade da banda.</p>
+                  <p><span class="text-puzzle-yellow font-bold">Resposta Puzzle</span> Brand, feeling, linguagem e estrutura modular para atualizações rápidas pelo cliente.</p>
+                </div>
+                
+                <div class="flex gap-2">
+                  <button 
+                    onclick="openInspector('limaorosa')" 
+                    class="flex-grow bg-zinc-900 hover:bg-puzzle-yellow text-white hover:text-black border border-puzzle-yellow/10 hover:border-puzzle-yellow py-2.5 px-3 rounded-xl text-[10px] font-mono font-bold uppercase transition-all duration-300 tracking-wider flex items-center justify-center gap-1.5 cursor-pointer"
+                  >
+                    <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
+                    <span>Inspecionar</span>
+                  </button>
+                  <a 
+                    href="https://bandalimaorosa.com/" 
+                    target="_blank" 
+                    class="w-11 h-10 bg-zinc-900/60 hover:bg-white text-white hover:text-black border border-white/10 rounded-xl flex items-center justify-center transition-all duration-300 shrink-0"
+                    title="Visitar"
+                  >
+                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Card 2 (MENU COZINHA - LP) -->
           <div data-category="lp" class="portfolio-item glass-panel-dark p-6 flex flex-col justify-between hover:border-puzzle-yellow/50 transition-all duration-300 relative overflow-hidden group bg-gradient-to-b from-zinc-900/40 to-zinc-950/80 reveal-up" style="transition-delay: 40ms;">
             <div class="absolute top-0 left-0 w-full h-[2px] bg-puzzle-yellow scale-x-50 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
@@ -1930,6 +1983,21 @@
           colorClass: 'bg-puzzle-yellow/10 text-puzzle-yellow border-puzzle-yellow/20',
           colorHex: '#FDCB5D',
           slaWeight: 92
+        },
+        limaorosa: {
+          proto: '// CASE_09',
+          category: 'lp',
+          title: 'Limão Rosa',
+          metric: 'Site Oficial 2026',
+          submetric: 'Brand + Conteúdo + Agenda',
+          strategy: 'Criação de site oficial para banda paulistana de rock psicodélico autoral, conectando estética, feeling, linguagem e comunicação de marca em uma experiência simples para fãs e fácil de atualizar pelo cliente. A entrega organiza álbum, agenda, ingressos, vídeos, mídia, comunidade e booking sem diluir a personalidade da banda.',
+          tech: ['Brand System', 'Next Experience', 'Agenda Modular', 'SEO Cultural', 'UX Mobile'],
+          db: 'Content Update Layer',
+          sla: 'Rota rápida para shows e ingressos',
+          url: 'https://bandalimaorosa.com/',
+          colorClass: 'bg-puzzle-yellow/10 text-puzzle-yellow border-puzzle-yellow/20',
+          colorHex: '#FDCB5D',
+          slaWeight: 95
         },
         menucozinha: {
           proto: '// CASE_02',
