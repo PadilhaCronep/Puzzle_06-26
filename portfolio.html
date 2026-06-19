@@ -1,0 +1,2775 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="IMAGEM/IMAGEM/logom.png" />
+    <link rel="shortcut icon" type="image/png" href="IMAGEM/IMAGEM/logom.png" />
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Portfólio e Cases de Software, Marketing e DOOH | Puzzle Systems</title>
+    <meta name="description" content="Conheça cases da Puzzle Systems em software sob medida, automação, tráfego pago B2B, landing pages, SEO e mídia DOOH." />
+    <meta name="keywords" content="portfólio Puzzle Systems, cases de sucesso, SaaS, tráfego pago, DOOH, automação, marketing B2B, software sob medida" />
+    <meta name="author" content="Puzzle Systems" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://puzzlesystems.com.br/portfolio.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Portfólio e Cases de Software, Marketing e DOOH | Puzzle Systems" />
+    <meta property="og:description" content="Conheça cases da Puzzle Systems em software sob medida, automação, tráfego pago B2B, landing pages, SEO e mídia DOOH." />
+    <meta property="og:url" content="https://puzzlesystems.com.br/portfolio.html" />
+    <meta property="og:site_name" content="Puzzle Systems" />
+    <meta property="og:image" content="https://puzzlesystems.com.br/IMAGEM/IMAGEM/logom.png" />
+    <meta property="og:image:alt" content="Puzzle Systems" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Portfólio e Cases de Software, Marketing e DOOH | Puzzle Systems" />
+    <meta property="twitter:description" content="Conheça cases da Puzzle Systems em software sob medida, automação, tráfego pago B2B, landing pages, SEO e mídia DOOH." />
+    <meta property="twitter:image" content="https://puzzlesystems.com.br/IMAGEM/IMAGEM/logom.png" />
+    <meta property="twitter:image:alt" content="Puzzle Systems" />
+
+    <meta name="theme-color" content="#09090b" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="application-name" content="Puzzle Systems" />
+    <meta name="apple-mobile-web-app-title" content="Puzzle Systems" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+    <link rel="preload" as="image" href="IMAGEM/IMAGEM/logom.png" type="image/png" fetchpriority="high" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/mobile.css" />
+    <style>
+      /* Hide standard Webkit scrollbar for premium custom tag visual strip */
+      #tech-tags-container::-webkit-scrollbar {
+        display: none;
+      }
+      #tech-tags-container {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      /* Query search text highlights */
+      mark.highlight-match {
+        background: rgba(180, 137, 243, 0.35);
+        color: #ffffff;
+        border-bottom: 1.5px solid #b489f3;
+        padding: 0 1.5px;
+        font-weight: bold;
+        border-radius: 2px;
+      }
+      /* View mode transition timing */
+      .view-fade-transition {
+        transition: opacity 0.3s ease, transform 0.3s ease;
+      }
+      .portfolio-shell {
+        position: relative;
+      }
+      .portfolio-hero-card,
+      .case-spotlight,
+      .portfolio-toolbar,
+      .portfolio-control-bar {
+        background:
+          linear-gradient(135deg, rgba(24, 24, 27, 0.86), rgba(9, 9, 11, 0.96)),
+          radial-gradient(circle at 0% 0%, rgba(132, 212, 216, 0.08), transparent 28%),
+          radial-gradient(circle at 100% 0%, rgba(253, 203, 93, 0.08), transparent 30%),
+          radial-gradient(circle at 100% 100%, rgba(240, 100, 101, 0.08), transparent 32%);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 18px 60px rgba(0, 0, 0, 0.28);
+      }
+      .portfolio-identity-card {
+        border-radius: 2rem;
+      }
+      .portfolio-identity-card .grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .portfolio-logo-orbit {
+        position: relative;
+      }
+      .portfolio-logo-orbit::before {
+        content: "";
+        position: absolute;
+        inset: -10px;
+        border-radius: 999px;
+        border: 1px solid rgba(132, 212, 216, 0.18);
+      }
+      .portfolio-brand-strip {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.5rem;
+      }
+      .portfolio-brand-strip span {
+        height: 3px;
+        border-radius: 999px;
+      }
+      .portfolio-toolbar {
+        position: relative;
+        z-index: 50;
+        overflow: hidden;
+        isolation: isolate;
+        background: transparent;
+        backdrop-filter: none;
+      }
+      .portfolio-toolbar::before {
+        content: none;
+      }
+      .portfolio-toolbar + .reveal-up {
+        margin-top: 1.25rem;
+      }
+      .portfolio-kpi-card {
+        border-radius: 24px !important;
+        min-height: 140px;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+      }
+      .portfolio-kpi-card::after {
+        content: "";
+        position: absolute;
+        left: 1.5rem;
+        right: 1.5rem;
+        bottom: 1.25rem;
+        height: 2px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, var(--kpi-color, #84d4d8), rgba(255, 255, 255, 0.08));
+        opacity: 0.52;
+      }
+      .portfolio-kpi-card:hover {
+        transform: translateY(-4px);
+        background: rgba(24, 24, 27, 0.82);
+      }
+      .portfolio-kpi-card[data-tone="teal"] {
+        --kpi-color: #84d4d8;
+      }
+      .portfolio-kpi-card[data-tone="yellow"] {
+        --kpi-color: #fdcb5d;
+      }
+      .portfolio-kpi-card[data-tone="pink"] {
+        --kpi-color: #f06465;
+      }
+      .portfolio-kpi-meta {
+        display: none;
+      }
+      .validation-model > div {
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+      }
+      .validation-model > div::before {
+        content: "";
+        position: absolute;
+        left: 1.25rem;
+        right: 1.25rem;
+        top: 0;
+        height: 2px;
+        border-radius: 999px;
+        background: currentColor;
+        opacity: 0.7;
+      }
+      .validation-model > div::after {
+        content: none;
+      }
+      .validation-model > div:hover {
+        transform: translateY(-3px);
+        background: rgba(24, 24, 27, 0.82);
+        border-color: rgba(255, 255, 255, 0.16);
+      }
+      .filter-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        min-height: 40px;
+        white-space: nowrap;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .filter-btn:focus {
+        outline: none;
+      }
+      .filter-btn i {
+        font-size: 0.875rem;
+      }
+      .portfolio-item {
+        min-height: 420px;
+        border-radius: 1.25rem !important;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.038), rgba(255, 255, 255, 0.012)),
+          rgba(16, 16, 19, 0.88) !important;
+        isolation: isolate;
+        transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+      }
+      .portfolio-item::before {
+        content: "";
+        position: absolute;
+        inset: 1px;
+        border-radius: calc(1.25rem - 1px);
+        pointer-events: none;
+        background:
+          linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 34%);
+        opacity: 0;
+        transition: opacity 0.35s ease;
+        z-index: -1;
+      }
+      .portfolio-item:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 26px 70px rgba(0, 0, 0, 0.34);
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.052), rgba(255, 255, 255, 0.016)),
+          rgba(18, 18, 21, 0.94) !important;
+      }
+      .portfolio-item:hover::before {
+        opacity: 1;
+      }
+      .case-media {
+        height: 150px !important;
+        border-radius: 1rem !important;
+        background: #09090b;
+      }
+      .case-media img {
+        filter: saturate(0.86) contrast(1.04);
+      }
+      .portfolio-item:hover .case-media img {
+        filter: saturate(1.04) contrast(1.08);
+      }
+      .case-media::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, transparent 40%, rgba(9, 9, 11, 0.76));
+        pointer-events: none;
+      }
+      .portfolio-item h3 {
+        letter-spacing: 0;
+      }
+      .portfolio-item .font-subtitle.line-clamp-2 {
+        min-height: 36px;
+      }
+      .portfolio-item .border-t {
+        display: none !important;
+      }
+      .portfolio-case-signal {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 0.5rem;
+        align-items: center;
+        margin: 1rem 0;
+        padding: 0.75rem 0.85rem;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: 0.9rem;
+        background: rgba(9, 9, 11, 0.42);
+        font-family: "Space Mono", monospace;
+        font-size: 0.58rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.56);
+      }
+      .portfolio-case-signal strong {
+        color: #fff;
+      }
+      .portfolio-mobile-signal,
+      .portfolio-mobile-toggle,
+      .portfolio-mobile-insight {
+        display: none !important;
+      }
+      .portfolio-item .flex.items-center.gap-3.px-3.py-2 {
+        display: none !important;
+      }
+      .portfolio-item .flex.items-center.gap-3.px-3.py-2 span {
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      #inspector-drawer {
+        position: fixed !important;
+        inset: 50% auto auto 50% !important;
+        top: 50% !important;
+        left: 50% !important;
+        right: auto !important;
+        bottom: auto !important;
+        max-width: 760px !important;
+        max-height: 760px !important;
+        width: min(94vw, 760px) !important;
+        height: min(88vh, 760px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 1.4rem;
+        background:
+          radial-gradient(circle at 12% 0%, rgba(132, 212, 216, 0.12), transparent 32%),
+          radial-gradient(circle at 92% 8%, rgba(253, 203, 93, 0.1), transparent 30%),
+          rgba(9, 9, 11, 0.98) !important;
+        box-shadow: 0 32px 120px rgba(0, 0, 0, 0.78) !important;
+        transform: translate(-50%, -45%) scale(0.96) !important;
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.36s ease, opacity 0.36s ease !important;
+        overflow: hidden;
+        z-index: 100 !important;
+      }
+      #inspector-drawer.is-open {
+        transform: translate(-50%, -50%) scale(1) !important;
+        opacity: 1;
+        pointer-events: auto;
+      }
+      #inspector-drawer .drawer-action-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.65rem;
+      }
+      .drawer-action-card {
+        min-height: 92px;
+        padding: 0.85rem;
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        border-radius: 1rem;
+        background: rgba(255, 255, 255, 0.03);
+      }
+      .drawer-action-card span {
+        display: block;
+        margin-bottom: 0.45rem;
+        font-family: "Space Mono", monospace;
+        font-size: 0.52rem;
+        font-weight: 800;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--case-accent, var(--color-puzzle-teal));
+      }
+      .drawer-action-card strong {
+        display: block;
+        color: #fff;
+        font-size: 0.76rem;
+        line-height: 1.35;
+      }
+      @media (max-width: 640px) {
+        #inspector-drawer {
+          width: calc(100vw - 1rem) !important;
+          height: calc(100dvh - 1rem) !important;
+          border-radius: 1rem;
+        }
+        #inspector-drawer .drawer-action-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      #list-view-container {
+        box-shadow: 0 18px 60px rgba(0, 0, 0, 0.22);
+      }
+      @media (min-width: 64rem) {
+        .lg\:col-span-5 {
+          grid-column: span 5 / span 5;
+        }
+        .lg\:col-span-6 {
+          grid-column: span 6 / span 6;
+        }
+        .lg\:col-span-7 {
+          grid-column: span 7 / span 7;
+        }
+      }
+      @media (max-width: 767px) {
+        #navbar > div {
+          height: 64px;
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+        #navbar .font-title.text-2xl {
+          font-size: 1.25rem;
+          line-height: 1;
+        }
+        #mobile-menu {
+          padding: 88px 20px 24px !important;
+        }
+        #mobile-menu > div {
+          gap: 14px !important;
+        }
+        #mobile-menu a {
+          font-size: clamp(1.45rem, 8vw, 2rem) !important;
+          line-height: 1 !important;
+          padding-bottom: 14px !important;
+          letter-spacing: -0.02em !important;
+        }
+        #mobile-menu a:last-child {
+          margin-top: 10px !important;
+          padding-top: 18px !important;
+          font-size: 0.9rem !important;
+          letter-spacing: 0.18em !important;
+        }
+        .portfolio-page main {
+          padding-top: 5.5rem !important;
+          padding-bottom: 5rem !important;
+        }
+        .portfolio-page main > div {
+          padding-left: 1rem !important;
+          padding-right: 1rem !important;
+          border-left: 0 !important;
+          border-right: 0 !important;
+        }
+        .portfolio-page h1 {
+          font-size: clamp(2.45rem, 13vw, 3.25rem) !important;
+          line-height: 0.92 !important;
+          margin-bottom: 1rem !important;
+        }
+        .portfolio-page .portfolio-intro-copy {
+          font-size: 0.95rem !important;
+          line-height: 1.5 !important;
+        }
+        .portfolio-identity-card {
+          padding: 1rem !important;
+          border-radius: 1.25rem !important;
+        }
+        .portfolio-identity-card .grid-cols-3 {
+          gap: 0.5rem !important;
+        }
+        .portfolio-identity-card .grid-cols-3 > div {
+          padding: 0.75rem !important;
+          border-radius: 0.9rem !important;
+        }
+        .portfolio-identity-card .space-y-3 {
+          display: none !important;
+        }
+        .portfolio-kpi-card {
+          padding: 1rem !important;
+          border-radius: 1.1rem !important;
+          min-height: 128px !important;
+        }
+        .portfolio-kpi-card p {
+          display: -webkit-box !important;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+          font-size: 0.75rem !important;
+          line-height: 1.35 !important;
+        }
+        .validation-model {
+          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+          gap: 0.75rem !important;
+          margin-bottom: 2rem !important;
+        }
+        .validation-model > div {
+          padding: 0.9rem !important;
+          border-radius: 1rem !important;
+        }
+        .validation-model h3 {
+          font-size: 0.82rem !important;
+          margin-bottom: 0 !important;
+        }
+        .validation-model p {
+          display: -webkit-box !important;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+          font-size: 0.72rem !important;
+          line-height: 1.35 !important;
+          margin-top: 0.45rem !important;
+        }
+        .case-spotlight {
+          padding: 1rem !important;
+          border-radius: 1.25rem !important;
+          margin-bottom: 1.5rem !important;
+        }
+        .case-spotlight p {
+          font-size: 0.86rem !important;
+          line-height: 1.45 !important;
+        }
+        .portfolio-toolbar {
+          position: relative;
+          top: auto;
+          padding: 1rem !important;
+          border-radius: 1.25rem !important;
+          margin-bottom: 1rem !important;
+        }
+        .portfolio-toolbar .filter-btn {
+          min-height: 38px;
+          padding: 0.65rem 0.75rem !important;
+          font-size: 8px !important;
+          letter-spacing: 0.08em !important;
+        }
+        #tech-tags-container {
+          display: none !important;
+        }
+        .portfolio-control-bar {
+          padding: 0.9rem !important;
+          border-radius: 1.1rem !important;
+          margin-bottom: 1.5rem !important;
+        }
+        #portfolio-grid {
+          gap: 1rem !important;
+          min-height: 0 !important;
+        }
+        .portfolio-item {
+          min-height: auto;
+          padding: 1rem !important;
+          border-radius: 1.1rem !important;
+        }
+        .case-media {
+          height: 120px !important;
+          border-radius: 16px !important;
+        }
+        .portfolio-item .font-subtitle.line-clamp-2 {
+          display: -webkit-box !important;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+          min-height: auto;
+          margin-bottom: 0.7rem !important;
+        }
+        .portfolio-page .portfolio-mobile-shell {
+          position: relative;
+          margin-top: 0.5rem;
+        }
+        .portfolio-page .portfolio-mobile-shell::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 2.55rem;
+          height: 1.8rem;
+          pointer-events: none;
+          background: linear-gradient(180deg, rgba(9, 9, 11, 0), rgba(9, 9, 11, 0.78));
+          opacity: 1;
+          transition: opacity 0.2s ease;
+        }
+        .portfolio-page .portfolio-mobile-shell.is-open::after {
+          opacity: 0;
+        }
+        .portfolio-page .portfolio-mobile-copy {
+          display: -webkit-box !important;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: var(--portfolio-mobile-lines, 2);
+          overflow: hidden;
+        }
+        .portfolio-page .portfolio-mobile-copy.is-expanded {
+          display: block !important;
+          -webkit-line-clamp: unset;
+          overflow: visible;
+        }
+        .portfolio-mobile-toggle {
+          display: inline-flex !important;
+          align-items: center;
+          justify-content: space-between;
+          gap: 0.55rem;
+          min-height: 34px;
+          margin-top: 0.65rem;
+          padding: 0.5rem 0.75rem;
+          border: 1px solid rgba(180, 137, 243, 0.28);
+          border-radius: 0.9rem;
+          background: linear-gradient(135deg, rgba(180, 137, 243, 0.12), rgba(255, 255, 255, 0.025));
+          color: #b489f3;
+          font-family: "Space Mono", monospace;
+          font-size: 0.57rem;
+          font-weight: 800;
+          letter-spacing: 0.13em;
+          text-transform: uppercase;
+          width: 100%;
+        }
+        .portfolio-mobile-toggle[data-tone="teal"] {
+          border-color: rgba(132, 212, 216, 0.3);
+          background: linear-gradient(135deg, rgba(132, 212, 216, 0.12), rgba(255, 255, 255, 0.025));
+          color: #84d4d8;
+        }
+        .portfolio-mobile-toggle[data-tone="yellow"] {
+          border-color: rgba(253, 203, 93, 0.32);
+          background: linear-gradient(135deg, rgba(253, 203, 93, 0.13), rgba(255, 255, 255, 0.025));
+          color: #fdcb5d;
+        }
+        .portfolio-mobile-toggle[data-tone="pink"] {
+          border-color: rgba(240, 100, 101, 0.32);
+          background: linear-gradient(135deg, rgba(240, 100, 101, 0.13), rgba(255, 255, 255, 0.025));
+          color: #f06465;
+        }
+        .portfolio-mobile-toggle svg {
+          width: 0.78rem;
+          height: 0.78rem;
+          transition: transform 0.2s ease;
+        }
+        .portfolio-mobile-toggle[aria-expanded="true"] svg {
+          transform: rotate(180deg);
+        }
+        .portfolio-item .portfolio-mobile-toggle {
+          margin-top: 0.1rem;
+          margin-bottom: 0.75rem;
+        }
+        .portfolio-item.is-mobile-compact .border-t {
+          max-height: 0;
+          opacity: 0;
+          margin-bottom: 0 !important;
+          padding-top: 0 !important;
+          overflow: hidden;
+          transition: max-height 0.28s ease, opacity 0.22s ease, padding 0.22s ease, margin 0.22s ease;
+        }
+        .portfolio-item.is-mobile-expanded .border-t {
+          max-height: 8rem;
+          opacity: 1;
+          margin-bottom: 0.75rem !important;
+          padding-top: 0.7rem !important;
+        }
+        .portfolio-mobile-insight {
+          display: grid !important;
+          gap: 0.55rem;
+          max-height: 0;
+          opacity: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease, opacity 0.24s ease, margin 0.24s ease;
+        }
+        .portfolio-item.is-mobile-expanded .portfolio-mobile-insight {
+          max-height: 12rem;
+          opacity: 1;
+          margin-bottom: 0.8rem;
+        }
+        .portfolio-mobile-insight-row {
+          display: flex;
+          justify-content: space-between;
+          gap: 0.8rem;
+          padding: 0.65rem 0.7rem;
+          border: 1px solid rgba(255, 255, 255, 0.06);
+          border-radius: 0.85rem;
+          background: rgba(9, 9, 11, 0.42);
+          font-family: "Space Mono", monospace;
+          font-size: 0.58rem;
+          line-height: 1.3;
+          text-transform: uppercase;
+        }
+        .portfolio-mobile-insight-row span:first-child {
+          color: rgba(255, 255, 255, 0.36);
+          letter-spacing: 0.12em;
+        }
+        .portfolio-mobile-insight-row span:last-child {
+          color: rgba(255, 255, 255, 0.78);
+          text-align: right;
+          font-weight: 800;
+        }
+        .portfolio-mobile-signal {
+          display: inline-flex !important;
+          align-items: center;
+          gap: 0.4rem;
+          margin-bottom: 0.55rem;
+          color: rgba(255, 255, 255, 0.38);
+          font-family: "Space Mono", monospace;
+          font-size: 0.55rem;
+          font-weight: 800;
+          letter-spacing: 0.16em;
+          text-transform: uppercase;
+        }
+        .portfolio-mobile-signal::before {
+          content: "";
+          width: 0.34rem;
+          height: 0.34rem;
+          border-radius: 999px;
+          background: currentColor;
+        }
+        .portfolio-item button[onclick^="openInspector"] span {
+          font-size: 0;
+        }
+        .portfolio-item button[onclick^="openInspector"] span::after {
+          content: "Saiba mais";
+          font-size: 10px;
+        }
+        .portfolio-item .border-t {
+          padding-top: 0.7rem !important;
+        }
+        .portfolio-item .border-t p {
+          font-size: 9.5px !important;
+          line-height: 1.45 !important;
+        }
+        #list-view-container {
+          margin-bottom: 1.5rem !important;
+        }
+
+        .portfolio-page .shape-blob {
+          opacity: 0.32;
+          filter: blur(96px);
+        }
+        .portfolio-page .portfolio-hero-card,
+        .portfolio-page .case-spotlight,
+        .portfolio-page .portfolio-toolbar,
+        .portfolio-page .portfolio-control-bar,
+        .portfolio-page .portfolio-kpi-card,
+        .portfolio-page .portfolio-item,
+        .portfolio-page .validation-model > div {
+          box-shadow: 0 14px 42px rgba(0, 0, 0, 0.24) !important;
+        }
+        .portfolio-page .portfolio-intro-copy {
+          max-width: 32rem !important;
+        }
+        .portfolio-page .portfolio-kpi-card {
+          display: grid;
+          grid-template-columns: 1fr;
+          column-gap: 0.85rem;
+          align-content: center;
+          align-items: start;
+          padding-top: 1.25rem !important;
+          padding-bottom: 1.25rem !important;
+        }
+        .portfolio-page .portfolio-kpi-card > span {
+          grid-column: 1 / -1;
+          margin-bottom: 0.65rem !important;
+        }
+        .portfolio-page .portfolio-kpi-card .flex.items-baseline {
+          grid-column: 1 / -1;
+          margin-bottom: 0.2rem !important;
+          min-height: 42px;
+          align-items: baseline;
+        }
+        .portfolio-page .portfolio-kpi-card::after {
+          left: 1rem;
+          right: 1rem;
+          bottom: 0.9rem;
+        }
+        .portfolio-page .portfolio-kpi-meta {
+          gap: 0.35rem;
+          margin-top: 0.15rem;
+          padding-bottom: 0.9rem;
+        }
+        .portfolio-page .portfolio-kpi-meta span {
+          min-height: 1.35rem;
+          padding: 0.24rem 0.42rem;
+          font-size: 0.48rem;
+          letter-spacing: 0.1em;
+        }
+        .portfolio-page .portfolio-kpi-card p {
+          grid-column: 1 / -1;
+          display: block !important;
+          color: rgba(255, 255, 255, 0.48) !important;
+        }
+        .portfolio-page .validation-model > div {
+          border-radius: 1rem !important;
+          min-height: 118px;
+        }
+        .portfolio-page .validation-model p {
+          display: -webkit-box !important;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+        .portfolio-page .portfolio-accordion-trigger {
+          cursor: pointer;
+          position: relative;
+          isolation: isolate;
+          overflow: hidden;
+          border-color: rgba(255, 255, 255, 0.09) !important;
+          background:
+            linear-gradient(135deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.014)),
+            rgba(14, 14, 17, 0.92) !important;
+          transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+        }
+        .portfolio-page .portfolio-accordion-trigger::before {
+          content: "";
+          position: absolute;
+          inset: 0 auto 0 0;
+          width: 3px;
+          background: var(--accordion-accent, #84d4d8);
+          opacity: 0.9;
+        }
+        .portfolio-page .portfolio-accordion-trigger::after {
+          content: "";
+          position: absolute;
+          inset: 1px;
+          border-radius: inherit;
+          pointer-events: none;
+          background:
+            radial-gradient(circle at 85% 20%, color-mix(in srgb, var(--accordion-accent, #84d4d8) 16%, transparent), transparent 34%),
+            linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 34%);
+          opacity: 0.38;
+          z-index: -1;
+        }
+        .portfolio-page .portfolio-accordion-trigger[data-tone="yellow"] {
+          --accordion-accent: #fdcb5d;
+        }
+        .portfolio-page .portfolio-accordion-trigger[data-tone="pink"] {
+          --accordion-accent: #f06465;
+        }
+        .portfolio-page .portfolio-accordion-trigger[data-tone="purple"] {
+          --accordion-accent: #b489f3;
+        }
+        .portfolio-page .portfolio-accordion-trigger:active {
+          transform: scale(0.99);
+        }
+        .portfolio-page .portfolio-accordion-icon {
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          width: 2.1rem;
+          height: 2.1rem;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid color-mix(in srgb, var(--accordion-accent, #84d4d8) 32%, rgba(255, 255, 255, 0.1));
+          border-radius: 0.9rem;
+          background:
+            linear-gradient(135deg, color-mix(in srgb, var(--accordion-accent, #84d4d8) 13%, transparent), rgba(255, 255, 255, 0.035));
+          color: var(--accordion-accent, #84d4d8);
+          box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+          transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+        }
+        .portfolio-page .portfolio-accordion-icon svg {
+          width: 1rem;
+          height: 1rem;
+          transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+        .portfolio-page .portfolio-accordion-icon .icon-minus {
+          position: absolute;
+          opacity: 0;
+          transform: scale(0.65) rotate(-90deg);
+        }
+        .portfolio-page .portfolio-accordion-trigger.is-open .portfolio-accordion-icon {
+          transform: rotate(180deg);
+          border-color: color-mix(in srgb, var(--accordion-accent, #84d4d8) 62%, rgba(255, 255, 255, 0.1));
+          background:
+            linear-gradient(135deg, color-mix(in srgb, var(--accordion-accent, #84d4d8) 22%, transparent), rgba(255, 255, 255, 0.045));
+        }
+        .portfolio-page .portfolio-accordion-trigger.is-open .icon-plus {
+          opacity: 0;
+          transform: scale(0.65) rotate(90deg);
+        }
+        .portfolio-page .portfolio-accordion-trigger.is-open .icon-minus {
+          opacity: 1;
+          transform: scale(1) rotate(0deg);
+        }
+        .portfolio-page .portfolio-accordion-content {
+          max-height: 0;
+          opacity: 0;
+          overflow: hidden;
+          transition: max-height 0.28s ease, opacity 0.22s ease, margin 0.22s ease, padding 0.22s ease;
+        }
+        .portfolio-page .portfolio-accordion-trigger.is-open .portfolio-accordion-content {
+          max-height: 7rem;
+          opacity: 1;
+          margin-top: 0.7rem;
+          padding-top: 0.7rem;
+          border-top: 1px solid rgba(255, 255, 255, 0.07);
+        }
+        .portfolio-page .portfolio-kpi-card.portfolio-accordion-trigger,
+        .portfolio-page .validation-model > div.portfolio-accordion-trigger {
+          padding-right: 3.4rem !important;
+        }
+        .portfolio-page .portfolio-kpi-card.portfolio-accordion-trigger p,
+        .portfolio-page .validation-model > div.portfolio-accordion-trigger p {
+          display: block !important;
+          -webkit-line-clamp: unset;
+        }
+        .portfolio-page .validation-model > div.portfolio-accordion-trigger h3 {
+          margin-bottom: 0 !important;
+        }
+        .portfolio-page .portfolio-accordion-hint {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.35rem;
+          margin-top: 0.65rem;
+          color: color-mix(in srgb, var(--accordion-accent, #84d4d8) 68%, rgba(255, 255, 255, 0.38));
+          font-family: "Space Mono", monospace;
+          font-size: 0.56rem;
+          font-weight: 800;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+        }
+        .portfolio-page .portfolio-accordion-hint::before {
+          content: "";
+          width: 0.42rem;
+          height: 0.42rem;
+          border-radius: 999px;
+          border: 1px solid currentColor;
+          box-shadow: 0 0 10px color-mix(in srgb, var(--accordion-accent, #84d4d8) 38%, transparent);
+        }
+        .portfolio-page .portfolio-accordion-trigger.is-open .portfolio-accordion-hint {
+          display: none;
+        }
+        .portfolio-page .case-spotlight {
+          background:
+            linear-gradient(145deg, rgba(12, 14, 16, 0.94), rgba(9, 9, 11, 0.98)),
+            radial-gradient(circle at 100% 0%, rgba(132, 212, 216, 0.16), transparent 32%) !important;
+          border-radius: 1.5rem !important;
+        }
+        .portfolio-page .case-spotlight h2 {
+          font-size: clamp(1.85rem, 8vw, 2.5rem) !important;
+          line-height: 0.95 !important;
+        }
+        .portfolio-page .case-spotlight .grid.grid-cols-1.sm\:grid-cols-3 {
+          grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+          gap: 0.5rem !important;
+        }
+        .portfolio-page .case-spotlight .grid.grid-cols-1.sm\:grid-cols-3 > div {
+          padding: 0.85rem !important;
+          border-radius: 0.95rem !important;
+          background: rgba(255, 255, 255, 0.025) !important;
+        }
+        .portfolio-page .case-spotlight .grid.grid-cols-1.sm\:grid-cols-3 strong {
+          font-size: 1.35rem !important;
+        }
+        .portfolio-page .case-spotlight .grid.grid-cols-1.sm\:grid-cols-3 span:last-child {
+          display: none !important;
+        }
+        .portfolio-page .portfolio-toolbar .lg\:col-span-5,
+        .portfolio-page .portfolio-toolbar .lg\:col-span-7 {
+          min-width: 0;
+        }
+        .portfolio-page .portfolio-toolbar .flex.flex-wrap {
+          display: grid !important;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 0.55rem !important;
+        }
+        .portfolio-page .portfolio-toolbar .filter-btn {
+          justify-content: center;
+          border-radius: 0.9rem !important;
+          white-space: nowrap;
+        }
+        .portfolio-page #case-search {
+          min-height: 46px;
+          font-size: 16px !important;
+        }
+        .portfolio-page .portfolio-control-bar {
+          gap: 0.75rem !important;
+        }
+        .portfolio-page #portfolio-grid {
+          gap: 1rem !important;
+        }
+        .portfolio-page .portfolio-item {
+          border-radius: 1.2rem !important;
+          padding: 0.85rem !important;
+          background:
+            linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.015)),
+            rgba(13, 13, 16, 0.94) !important;
+        }
+        .portfolio-page .portfolio-item:hover {
+          transform: none;
+        }
+        .portfolio-page .portfolio-item .case-media {
+          height: 132px !important;
+          margin-bottom: 0.85rem !important;
+          border-radius: 0.95rem !important;
+        }
+        .portfolio-page .portfolio-item .flex.justify-between.items-center {
+          gap: 0.65rem;
+          margin-bottom: 0.7rem !important;
+        }
+        .portfolio-page .portfolio-item h3 {
+          font-size: 1.15rem !important;
+          line-height: 1.05 !important;
+          margin-bottom: 0.5rem !important;
+        }
+        .portfolio-page .portfolio-item .font-subtitle.line-clamp-2 {
+          color: rgba(255, 255, 255, 0.52) !important;
+          line-height: 1.45 !important;
+        }
+        .portfolio-page .portfolio-mobile-signal {
+          margin-top: 0.2rem;
+          margin-bottom: 0.4rem;
+        }
+        .portfolio-page .portfolio-mobile-toggle {
+          min-height: 38px;
+          margin-top: 0.25rem;
+          margin-bottom: 0.65rem;
+          border-radius: 0.95rem;
+          background: rgba(255, 255, 255, 0.035);
+          letter-spacing: 0.1em;
+        }
+        .portfolio-page .portfolio-mobile-insight-row {
+          padding: 0.58rem 0.65rem;
+        }
+        .portfolio-page .portfolio-item .flex.gap-2 {
+          gap: 0.55rem !important;
+        }
+        .portfolio-page .portfolio-item button[onclick^="openInspector"] {
+          min-height: 42px;
+          border-radius: 0.95rem !important;
+        }
+        .portfolio-page .portfolio-item a.w-11 {
+          width: 42px !important;
+          height: 42px !important;
+          border-radius: 0.95rem !important;
+        }
+        .portfolio-page .portfolio-item .border-t {
+          display: none;
+        }
+        .portfolio-page .portfolio-case-signal {
+          margin: 0.75rem 0;
+          padding: 0.65rem 0.7rem;
+          font-size: 0.52rem;
+        }
+      }
+      @media (max-width: 767px) {
+        .portfolio-page .portfolio-toolbar {
+          width: min(100%, 380px);
+          margin-left: auto !important;
+          margin-right: auto !important;
+          padding: 0.78rem !important;
+          gap: 0.72rem !important;
+          border-radius: 1.15rem !important;
+        }
+        .portfolio-page .portfolio-toolbar > div {
+          width: 100%;
+          min-width: 0;
+        }
+        .portfolio-page .portfolio-toolbar > div > .font-mono {
+          margin-bottom: 0.48rem !important;
+          font-size: 7.5px !important;
+          line-height: 1.25 !important;
+          letter-spacing: 0.13em !important;
+          color: rgba(255, 255, 255, 0.5) !important;
+        }
+        .portfolio-page .portfolio-toolbar .flex.flex-wrap {
+          display: grid !important;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 0.45rem !important;
+          overflow: visible;
+          padding-bottom: 0;
+          scroll-snap-type: none;
+        }
+        .portfolio-page .portfolio-toolbar .flex.flex-wrap::-webkit-scrollbar {
+          display: none;
+        }
+        .portfolio-page .portfolio-toolbar .filter-btn {
+          width: 100%;
+          min-width: 0;
+          min-height: 34px;
+          padding: 0.54rem 0.55rem !important;
+          justify-content: center;
+          gap: 0.32rem;
+          border-radius: 0.85rem !important;
+          font-size: 7px !important;
+          letter-spacing: 0.03em !important;
+          line-height: 1.05 !important;
+          white-space: normal;
+          scroll-snap-align: unset;
+          text-align: center;
+        }
+        .portfolio-page .portfolio-toolbar .filter-btn svg {
+          width: 0.78rem !important;
+          height: 0.78rem !important;
+          flex: 0 0 auto;
+        }
+        .portfolio-page .portfolio-toolbar .filter-btn:nth-child(5) {
+          grid-column: auto;
+        }
+        .portfolio-page #case-search {
+          min-height: 40px;
+          border-radius: 0.95rem !important;
+          padding: 0.68rem 2.35rem 0.68rem 0.85rem !important;
+          font-size: 10px !important;
+          letter-spacing: 0.06em !important;
+        }
+        .portfolio-page #case-search::placeholder {
+          font-size: 9px;
+          letter-spacing: 0.06em;
+        }
+        .portfolio-page .portfolio-toolbar .relative > .absolute {
+          top: 50% !important;
+          right: 0.85rem !important;
+          transform: translateY(-50%);
+        }
+        .portfolio-page .portfolio-toolbar .relative > .absolute svg {
+          width: 0.9rem;
+          height: 0.9rem;
+        }
+        .portfolio-page main > .max-w-7xl {
+          width: 100% !important;
+          max-width: 100% !important;
+          box-sizing: border-box;
+          padding-left: 1rem !important;
+          padding-right: 1rem !important;
+          border-left: 0 !important;
+          border-right: 0 !important;
+          overflow: hidden;
+        }
+        .portfolio-page .portfolio-hero-card,
+        .portfolio-page .case-spotlight,
+        .portfolio-page .portfolio-toolbar,
+        .portfolio-page .portfolio-control-bar,
+        .portfolio-page .portfolio-kpi-card,
+        .portfolio-page .portfolio-item,
+        .portfolio-page .validation-model > div {
+          width: 100%;
+          inline-size: calc(100vw - 2.25rem);
+          max-width: 100%;
+          box-sizing: border-box;
+          justify-self: start;
+        }
+        .portfolio-page h1 {
+          max-width: 100%;
+          overflow-wrap: anywhere;
+        }
+        .portfolio-page .portfolio-identity-card .grid-cols-3 > div {
+          min-width: 0;
+          padding-inline: 0.6rem !important;
+        }
+        .portfolio-page .portfolio-identity-card .grid-cols-3 {
+          width: calc(100vw - 4.6rem) !important;
+          max-width: 100%;
+          grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+          gap: 0.45rem !important;
+        }
+        .portfolio-page .portfolio-identity-card .grid-cols-3 strong,
+        .portfolio-page .portfolio-identity-card .grid-cols-3 span {
+          overflow-wrap: anywhere;
+        }
+        .portfolio-page .portfolio-identity-card .grid-cols-3 strong {
+          font-size: 1.45rem !important;
+        }
+        .portfolio-page .portfolio-identity-card .grid-cols-3 span {
+          font-size: 0.46rem !important;
+          letter-spacing: 0.08em !important;
+        }
+        .portfolio-page .portfolio-kpi-card .flex.items-baseline {
+          flex-wrap: wrap;
+          gap: 0.42rem !important;
+        }
+        .portfolio-page .portfolio-kpi-card .flex.items-baseline > span:first-child {
+          font-size: 2.15rem !important;
+          line-height: 0.9 !important;
+        }
+        .portfolio-page .portfolio-kpi-card .flex.items-baseline > span:last-child {
+          white-space: normal;
+          font-size: 0.54rem !important;
+          line-height: 1.2 !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="portfolio-page bg-zinc-950 text-white relative font-sans overflow-x-hidden">
+    <!-- Background Elements -->
+    <div class="fixed inset-0 z-0 pointer-events-none">
+      <div class="puzzle-grid absolute inset-0 opacity-20 animate-grid"></div>
+      <div class="shape-blob bg-puzzle-teal" style="width: 600px; height: 600px; top: -10%; left: -5%;"></div>
+      <div class="shape-blob bg-puzzle-yellow" style="width: 500px; height: 500px; top: 40%; right: -10%; animation-delay: -5s;"></div>
+      <div class="shape-blob bg-puzzle-pink" style="width: 700px; height: 700px; bottom: -15%; left: 10%; animation-delay: -10s;"></div>
+    </div>
+
+        <!-- NAVBAR -->
+    <nav
+      id="navbar"
+      class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent bg-transparent"
+    >
+      <div class="max-w-7xl mx-auto px-6 md:px-8 h-20 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3 group cursor-pointer">
+          <div class="w-10 h-10 flex items-center justify-center rounded-[2rem] bg-zinc-900 group-hover:rotate-[15deg] group-hover:scale-110 transition-all duration-300 card-3d">
+            <img loading="eager" decoding="async" fetchpriority="high" 
+              src="IMAGEM/IMAGEM/logom.png" 
+              alt="Logo" 
+              width="24"
+              height="24"
+              class="w-6 h-6 object-contain card-3d-inner"
+            />
+          </div>
+          <span class="font-title text-2xl tracking-tighter text-white">puzzle 
+            <span class="hidden sm:block text-xs text-puzzle-teal font-mono uppercase tracking-widest opacity-80 -mt-1 font-normal">Marketing & Software</span>
+          </span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex gap-8 absolute left-1/2 -translate-x-1/2 pointer-events-auto">
+          <a href="servicos-software.html" class="text-xs font-mono font-bold uppercase tracking-widest text-white/50 hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-full after:h-px after:bg-puzzle-teal after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left hover:text-puzzle-teal">SOFTWARE</a>
+          <a href="servicos-marketing.html" class="text-xs font-mono font-bold uppercase tracking-widest text-white/50 hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-full after:h-px after:bg-puzzle-yellow after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left hover:text-puzzle-yellow">MARKETING</a>
+          <a href="servicos-dooh.html" class="text-xs font-mono font-bold uppercase tracking-widest text-white/50 hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-full after:h-px after:bg-puzzle-pink after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left hover:text-puzzle-pink">DOOHi</a>
+          <a href="portfolio.html" class="text-xs font-mono font-bold uppercase tracking-widest text-white/50 hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-full after:h-px after:bg-puzzle-purple after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left hover:text-puzzle-purple">PORTFÓLIO</a>
+          <a href="blog.html" class="text-xs font-mono font-bold uppercase tracking-widest text-white/50 hover:text-white transition-colors relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-full after:h-px after:bg-puzzle-teal after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left hover:text-puzzle-teal">BLOG</a>
+        </div>
+
+        <!-- Right actions -->
+        <div class="flex items-center gap-3 z-10 pointer-events-auto">
+          <a href="contato.html" class="hidden sm:inline-flex bg-zinc-950 text-white px-6 py-2.5 text-[11px] font-mono font-bold uppercase tracking-widest tech-button hover:bg-transparent hover:text-white">
+            <span class="relative z-10">Escale agora</span>
+          </a>
+          <button id="mobile-menu-btn" class="md:hidden p-3 border border-white/10 bg-zinc-900 rounded-lg shrink-0 flex items-center justify-center">
+            <i data-lucide="menu" class="w-5 h-5 text-white"></i>
+            <i data-lucide="x" class="w-5 h-5 text-white hidden"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-[45] bg-[#0a0a0a]/98 backdrop-blur-3xl flex flex-col px-6 pt-32 pb-10 h-[100dvh] w-screen md:hidden transition-all duration-500 translate-x-full opacity-0 pointer-events-none">
+      <div class="flex flex-col gap-8 flex-1">
+        <a href="servicos-software.html" class="text-4xl font-title uppercase tracking-tighter text-white hover:text-puzzle-teal transition-colors border-b border-white/10 pb-4">SOFTWARE</a>
+        <a href="servicos-marketing.html" class="text-4xl font-title uppercase tracking-tighter text-white hover:text-puzzle-yellow transition-colors border-b border-white/10 pb-4">MARKETING</a>
+        <a href="servicos-dooh.html" class="text-4xl font-title uppercase tracking-tighter text-white hover:text-puzzle-pink transition-colors border-b border-white/10 pb-4">DOOHi</a>
+        <a href="portfolio.html" class="text-4xl font-title uppercase tracking-tighter text-white hover:text-puzzle-purple transition-colors border-b border-white/10 pb-4">PORTFÓLIO</a>
+        <a href="contato.html" class="text-2xl font-mono uppercase tracking-widest text-white/50 hover:text-white transition-colors mt-auto pt-8">/ Contato</a>
+      </div>
+    </div>    <!-- MAIN CONTENT -->
+    <main class="relative z-10 pt-32 pb-40">
+      <div class="max-w-7xl mx-auto px-6 md:px-8 border-x border-white/5 relative h-full">
+        <div class="line-accent -left-px top-0 opacity-50"></div>
+
+        <!-- Header -->
+        <div class="grid lg:grid-cols-12 gap-8 items-end mb-12 reveal-up">
+          <div class="lg:col-span-7">
+            <div class="inline-flex items-center gap-3 px-4 py-1.5 glass-panel-dark border-l-[3px] border-l-puzzle-purple mb-8">
+              <div class="w-1.5 h-1.5 bg-purple-400 rounded-full animate-pulse shadow-[0_0_10px_#b489f3]"></div>
+              <span class="text-[10px] font-mono uppercase tracking-[0.2em] opacity-80">Prova operacional</span>
+            </div>
+
+            <h1 class="font-title text-5xl md:text-7xl uppercase tracking-tighter mb-6 leading-none">
+              Cases que <br/> <span class="puzzle-gradient-text font-black">sustentam decisão.</span>
+            </h1>
+
+            <p class="portfolio-intro-copy font-subtitle text-base md:text-lg text-white/55 max-w-2xl leading-relaxed">
+              Cases reais com contexto, métrica e rastro técnico para avaliar a entrega com clareza.
+            </p>
+          </div>
+
+          <div class="lg:col-span-5 portfolio-hero-card portfolio-identity-card p-6 md:p-8 relative overflow-hidden">
+            <div class="absolute -right-12 -top-12 w-40 h-40 bg-puzzle-teal/15 blur-3xl rounded-full pointer-events-none"></div>
+            <div class="absolute -left-20 -bottom-20 w-48 h-48 bg-puzzle-pink/10 blur-3xl rounded-full pointer-events-none"></div>
+
+        
+
+            <div class="portfolio-brand-strip mb-8">
+              <span class="bg-puzzle-teal"></span>
+              <span class="bg-puzzle-yellow"></span>
+              <span class="bg-puzzle-pink"></span>
+            </div>
+
+            <div class="grid grid-cols-3 gap-3 mb-8">
+              <div class="border border-white/10 bg-white/[0.03] rounded-2xl p-4">
+                <span class="font-title text-2xl text-white block leading-none">09</span>
+                <span class="font-mono text-[8px] uppercase tracking-widest text-white/35">cases ativos</span>
+              </div>
+              <div class="border border-white/10 bg-white/[0.03] rounded-2xl p-4">
+                <span class="font-title text-2xl text-white block leading-none">04</span>
+                <span class="font-mono text-[8px] uppercase tracking-widest text-white/35">frentes técnicas</span>
+              </div>
+              <div class="border border-white/10 bg-white/[0.03] rounded-2xl p-4">
+                <span class="font-title text-2xl text-white block leading-none">ON</span>
+                <span class="font-mono text-[8px] uppercase tracking-widest text-white/35">operação</span>
+              </div>
+            </div>
+
+            <div class="space-y-3 font-mono text-[10px] uppercase tracking-widest text-white/45">
+              <div class="flex items-center justify-between border-t border-white/10 pt-4">
+                <span>Engenharia</span>
+                <span class="text-puzzle-teal">SaaS / APIs / Painéis</span>
+              </div>
+              <div class="flex items-center justify-between border-t border-white/10 pt-4">
+                <span>Aquisição</span>
+                <span class="text-puzzle-yellow">Ads / LP / SEO</span>
+              </div>
+              <div class="flex items-center justify-between border-t border-white/10 pt-4">
+                <span>DOOH</span>
+                <span class="text-puzzle-pink">Mídia exterior</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Global Metrics Bento Box -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 reveal-up" style="transition-delay: 50ms;">
+          <!-- Metric 1 -->
+          <div data-tone="teal" class="portfolio-kpi-card glass-panel-dark p-6 rounded-2xl border border-puzzle-teal/25 bg-puzzle-teal/[2%] relative overflow-hidden group">
+            <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-puzzle-teal/10 to-transparent rounded-bl-full pointer-events-none"></div>
+            <span class="font-mono text-[9px] uppercase tracking-[0.2em] text-puzzle-teal block mb-2">// SOFTWARE: Economia e produtividade </span>
+            <div class="flex items-baseline gap-2 mb-2">
+              <span class="font-title text-4xl font-extrabold text-white tracking-tight">360k+</span>
+              <span class="font-mono text-xs text-puzzle-teal font-bold bg-puzzle-teal/10 px-2 py-0.5 rounded uppercase">De economia anual</span>
+            </div>
+            <div class="portfolio-kpi-meta">
+              <span>Produção</span>
+            </div>
+          </div>
+          <!-- Metric 2 -->
+            <div data-tone="yellow" class="portfolio-kpi-card glass-panel-dark p-6 rounded-2xl border border-puzzle-yellow/25 bg-puzzle-yellow/[2%] relative overflow-hidden group">
+            <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-puzzle-yellow/10 to-transparent rounded-bl-full pointer-events-none"></div>
+            <span class="font-mono text-[9px] uppercase tracking-[0.2em] text-puzzle-yellow block mb-2">// MARKETING: campanhas </span>
+            <div class="flex items-baseline gap-2 mb-2">
+              <span class="font-title text-4xl font-extrabold text-white tracking-tight"> 1,9MI+ </span>
+              <span class="font-mono text-xs text-puzzle-yellow font-bold bg-puzzle-yellow/10 px-2 py-0.5 rounded uppercase"> Orçamento gerido</span>
+            </div>
+            <div class="portfolio-kpi-meta">
+              <span>MARKETING</span>
+            </div>
+          </div>
+          <!-- Metric 3 -->
+          <div data-tone="pink" class="portfolio-kpi-card glass-panel-dark p-6 rounded-2xl border border-puzzle-pink/25 bg-puzzle-pink/[2%] relative overflow-hidden group">
+            <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-puzzle-pink/10 to-transparent rounded-bl-full pointer-events-none"></div>
+            <span class="font-mono text-[9px] uppercase tracking-[0.2em] text-puzzle-pink block mb-2">// DOOHi: SmartGeo</span>
+            <div class="flex items-baseline gap-2 mb-2">
+              <span class="font-title text-4xl font-extrabold text-white tracking-tight">10Mi+</span>
+              <span class="font-mono text-xs text-puzzle-pink font-bold bg-puzzle-pink/10 px-2 py-0.5 rounded uppercase">De impressões diárias</span>
+            </div>
+            <div class="portfolio-kpi-meta">
+              <span>DOOH</span>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Featured Case -->
+        <div class="case-spotlight rounded-[2rem] p-6 md:p-8 mb-12 reveal-up relative overflow-hidden" style="transition-delay: 75ms;">
+          <div class="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-puzzle-teal/10 to-transparent pointer-events-none"></div>
+          <div class="grid lg:grid-cols-12 gap-8 items-center relative z-10">
+            <div class="lg:col-span-7">
+              <div class="flex flex-wrap items-center gap-3 mb-6">
+                <span class="font-mono text-[10px] text-puzzle-teal uppercase tracking-[0.24em]">Case referência</span>
+              </div>
+              <h2 class="font-title text-3xl md:text-5xl uppercase tracking-tighter text-white mb-5">
+                Carrion Contabilidade
+              </h2>
+              <p class="font-subtitle text-sm md:text-base text-white/55 leading-relaxed max-w-2xl mb-6">
+                Plataforma fiscal para consolidar dados, reduzir trabalho manual e acelerar decisões em operação contábil de grande porte.
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div class="border border-white/10 bg-white/[0.03] rounded-2xl p-4">
+                  <span class="font-mono text-[9px] text-white/35 uppercase tracking-widest block mb-2">economia anual</span>
+                  <strong class="font-title text-2xl text-white">360 mil</strong>
+                </div>
+                <div class="border border-white/10 bg-white/[0.03] rounded-2xl p-4">
+                  <span class="font-mono text-[9px] text-white/35 uppercase tracking-widest block mb-2"> Tempo Economizado / Mês </span>
+                  <strong class="font-title text-2xl text-white"> 460 h </strong>
+                </div>
+                <div class="border border-white/10 bg-white/[0.03] rounded-2xl p-4">
+                  <span class="font-mono text-[9px] text-white/35 uppercase tracking-widest block mb-2"> satisfação </span>
+                  <strong class="font-title text-2xl text-white">95% </strong>
+                </div>
+              </div>
+            </div>
+            <div class="lg:col-span-5">
+              <div class="border border-white/10 rounded-[1.5rem] bg-zinc-950/60 p-5">
+                <div class="flex items-center justify-between mb-5">
+                  <span class="font-mono text-[9px] text-white/40 uppercase tracking-widest">Resumo</span>
+                  <span class="flex items-center gap-2 font-mono text-[9px] text-puzzle-teal uppercase tracking-widest">
+                    <span class="w-1.5 h-1.5 rounded-full bg-puzzle-teal animate-pulse"></span>
+                    online
+                  </span>
+                </div>
+                <div class="space-y-3 font-mono text-[10px] text-white/50">
+                  <div class="flex justify-between border-b border-white/5 pb-3"><span>Escopo</span><strong class="text-white">Controle fiscal </strong></div>
+                  <div class="flex justify-between border-b border-white/5 pb-3"><span>Entrega</span><strong class="text-white">Automação de processos</strong></div>
+                  <div class="flex justify-between"><span>Critério</span><strong class="text-white">Segurança e eficácia</strong></div>
+                </div>
+                <button onclick="openInspector('nelsonwilians')" class="mt-6 w-full bg-puzzle-teal text-black py-3 rounded-xl font-mono text-[10px] font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-white transition-colors">
+                  <i data-lucide="scan-search" class="w-4 h-4"></i>
+                  Ver case
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Filters Bar & Search -->
+        <div class="portfolio-toolbar grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-8 items-end mb-8 reveal-up rounded-2xl p-6 md:p-8 border border-white/10 bg-white/3 backdrop-blur-sm" style="transition-delay: 100ms;">
+          <div class="lg:col-span-8 w-full">
+            <div class="font-mono text-[9px] uppercase tracking-[0.2em] text-white/35 mb-5 block font-bold">// FILTRAR POR SOLUÇÃO</div>
+            <div class="flex flex-wrap gap-2.5 pointer-events-auto">
+              <button 
+                data-filter="all" 
+                class="px-4 py-2.5 font-mono text-[9px] font-bold uppercase tracking-widest rounded-lg transition-all duration-300 border bg-white text-zinc-950 border-white cursor-pointer hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] active:scale-95 filter-btn"
+              >
+                <i data-lucide="sparkles" class="w-3 h-3"></i>
+                <span>Todos</span>
+              </button>
+              <button 
+                data-filter="lp" 
+                class="px-4 py-2.5 font-mono text-[9px] font-bold uppercase tracking-widest rounded-lg transition-all duration-300 border border-white/20 hover:border-puzzle-yellow/60 text-white/50 hover:text-puzzle-yellow cursor-pointer hover:scale-105 hover:bg-puzzle-yellow/5 active:scale-95 filter-btn"
+              >
+                <i data-lucide="layout-template" class="w-3 h-3"></i>
+                <span>Landing Pages</span>
+              </button>
+              <button 
+                data-filter="trafego" 
+                class="px-4 py-2.5 font-mono text-[9px] font-bold uppercase tracking-widest rounded-lg transition-all duration-300 border border-white/20 hover:border-puzzle-purple/60 text-white/50 hover:text-puzzle-purple cursor-pointer hover:scale-105 hover:bg-purple-500/5 active:scale-95 filter-btn"
+              >
+                <i data-lucide="trending-up" class="w-3 h-3"></i>
+                <span>Tráfego Pago</span>
+              </button>
+              <button 
+                data-filter="software" 
+                class="px-4 py-2.5 font-mono text-[9px] font-bold uppercase tracking-widest rounded-lg transition-all duration-300 border border-white/20 hover:border-puzzle-teal/60 text-white/50 hover:text-puzzle-teal cursor-pointer hover:scale-105 hover:bg-puzzle-teal/5 active:scale-95 filter-btn"
+              >
+                <i data-lucide="code-2" class="w-3 h-3"></i>
+                <span>Software</span>
+              </button>
+            </div>
+          </div>
+          <div class="lg:col-span-4 w-full">
+            <div class="font-mono text-[9px] uppercase tracking-[0.2em] text-white/35 mb-3 block font-bold">// BUSCAR CAGE OU STACK</div>
+            <div class="relative group">
+              <input 
+                type="text" 
+                id="case-search" 
+                placeholder="EX: AWS, GOOGLE, ROAS..." 
+                class="w-full bg-white/5 hover:bg-white/8 focus:bg-white/10 border border-white/20 hover:border-white/30 focus:border-puzzle-purple/50 rounded-lg px-4 py-2.5 font-mono text-[9px] uppercase tracking-widest placeholder:text-white/25 text-white focus:outline-none transition-all duration-300 pr-10"
+              />
+              <div class="absolute right-3.5 top-1/2 -translate-y-1/2 text-white/25 group-focus-within:text-puzzle-purple transition-colors duration-300 pointer-events-none">
+                <i data-lucide="search" class="w-4 h-4"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+                <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8 reveal-up" style="transition-delay: 130ms;">
+          <div>
+            <span class="font-mono text-[9px] uppercase tracking-[0.2em] text-puzzle-purple block mb-3">/ CASOS SELECIONADOS</span>
+            <h2 class="font-title text-3xl md:text-4xl lg:text-5xl uppercase tracking-tighter text-white leading-tight">Resultados <br class="hidden sm:block" /> por critério.</h2>
+          </div>
+          
+        </div>
+
+        <!-- Portfolio Cards Grid -->
+        <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative min-h-[400px]">
+          
+       
+          <!-- Card 2 (MENU COZINHA - LP) -->
+          <div data-category="lp" class="portfolio-item glass-panel-dark p-6 flex flex-col justify-between hover:border-puzzle-yellow/50 transition-all duration-300 relative overflow-hidden group bg-gradient-to-b from-zinc-900/40 to-zinc-950/80 reveal-up" style="transition-delay: 40ms;">
+            <div class="absolute top-0 left-0 w-full h-[2px] bg-puzzle-yellow scale-x-50 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+            <div class="flex flex-col h-full justify-between">
+              <div>
+                <!-- Project Image -->
+                <div class="case-media h-40 mb-5 rounded-xl border border-white/5 overflow-hidden relative transition-all duration-300 group-hover:border-puzzle-yellow/30">
+                  <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=600&auto=format&fit=crop" alt="Menu Cozinha" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+                </div>
+
+                <div class="flex justify-between items-center mb-4">
+                  <span class="font-mono text-[10px] text-puzzle-yellow uppercase tracking-widest">// Meta ads + Landing Page </span>
+                  <span class="px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider rounded bg-puzzle-yellow/15 text-puzzle-yellow font-extrabold border border-puzzle-yellow/20">7.8X ROAS</span>
+                </div>
+                <h3 class="font-title text-xl uppercase mb-2 text-white group-hover:text-puzzle-yellow transition-colors duration-300">Menu Cozinha</h3>
+                <p class="font-subtitle text-xs text-zinc-400 mb-4 leading-relaxed line-clamp-2">
+                  Restaurante e operacao gastronomica de elite focado em culinaria gourmet refinada e reservas online.
+                </p>
+
+                <!-- Quick Metric Banner -->
+                <div class="flex items-center gap-3 px-3 py-2 bg-zinc-900/60 rounded-xl border border-white/5 mb-4">
+                  <div class="w-1.5 h-1.5 bg-puzzle-yellow rounded-full animate-pulse shadow-[0_0_8px_#fdcb5d]"></div>
+                  <span class="font-mono text-[10px] text-zinc-300 uppercase tracking-tight">Entrega: Site Institucional + Tráfego</span>
+                </div>
+              </div>
+
+              <div>
+                <div class="border-t border-white/5 pt-3 font-mono text-[10px] text-zinc-500 space-y-0.5 mb-4">
+                  <p><span class="text-puzzle-yellow font-bold">Problema crítico</span> Absenteísmo de agendamento de mesa.</p>
+                  <p><span class="text-puzzle-yellow font-bold">Resposta Puzzle</span> Funil hiper-segmentado e site de carregamento ágil.</p>
+                </div>
+                
+                <div class="flex gap-2">
+                  <button 
+                    onclick="openInspector('menucozinha')" 
+                    class="flex-grow bg-zinc-900 hover:bg-puzzle-yellow text-white hover:text-black border border-puzzle-yellow/10 hover:border-puzzle-yellow py-2.5 px-3 rounded-xl text-[10px] font-mono font-bold uppercase transition-all duration-300 tracking-wider flex items-center justify-center gap-1.5 cursor-pointer"
+                  >
+                    <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
+                    <span>Inspecionar</span>
+                  </button>
+                  <a 
+                    href="http://menucozinhaevinho.com.br/" 
+                    target="_blank" 
+                    class="w-11 h-10 bg-zinc-900/60 hover:bg-white text-white hover:text-black border border-white/10 rounded-xl flex items-center justify-center transition-all duration-300 shrink-0"
+                    title="Visitar"
+                  >
+                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 (CROCASE - TRAFEGO) -->
+          <div data-category="trafego" class="portfolio-item glass-panel-dark p-6 flex flex-col justify-between hover:border-puzzle-purple/50 transition-all duration-300 relative overflow-hidden group bg-gradient-to-b from-zinc-900/40 to-zinc-950/80 reveal-up" style="transition-delay: 80ms;">
+            <div class="absolute top-0 left-0 w-full h-[2px] bg-puzzle-purple scale-x-50 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+            <div class="flex flex-col h-full justify-between">
+              <div>
+                <!-- Project Image -->
+                <div class="case-media h-40 mb-5 rounded-xl border border-white/5 overflow-hidden relative transition-all duration-300 group-hover:border-puzzle-purple/30">
+                  <img loading="lazy" decoding="async" src="IMAGEM/IMAGEM/crocase.jpg" alt="Crocase" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+                </div>
+
+                <div class="flex justify-between items-center mb-4">
+                  <span class="font-mono text-[10px] text-puzzle-purple uppercase tracking-widest">// Meta ads + Landing Page + N8N </span>
+                  <span class="px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider rounded bg-puzzle-purple/15 text-puzzle-purple font-extrabold border border-puzzle-purple/20">5.8X ROAS</span>
+                </div>
+                <h3 class="font-title text-xl uppercase mb-2 text-white group-hover:text-puzzle-yellow transition-colors duration-300">Crocase</h3>
+                <p class="font-subtitle text-xs text-zinc-400 mb-4 leading-relaxed line-clamp-2">
+                  Franquia especializada em capas premium, acessórios modernos e personalizações para smartphones.
+                </p>
+
+                <div class="flex items-center gap-3 px-3 py-2 bg-zinc-900/60 rounded-xl border border-white/5 mb-4">
+                  <div class="w-1.5 h-1.5 bg-puzzle-purple rounded-full animate-pulse shadow-[0_0_8px_#b489f3]"></div>
+                  <span class="font-mono text-[10px] text-zinc-300 uppercase tracking-tight">Entrega: Site Institucional + Tráfego</span>
+                </div>
+              </div>
+
+              <div>
+                <div class="border-t border-white/5 pt-3 font-mono text-[10px] text-zinc-500 space-y-0.5 mb-4">
+                  <p><span class="text-puzzle-purple font-bold">Problema crítico</span> Triagem de leads desqualificados.</p>
+                  <p><span class="text-puzzle-purple font-bold">Resposta Puzzle</span> Automação na WhatsApp Cloud API.</p>
+                </div>
+                
+                <div class="flex gap-2">
+                  <button 
+                    onclick="openInspector('crocase')" 
+                    class="flex-grow bg-zinc-900 hover:bg-puzzle-purple text-white hover:text-black border border-puzzle-purple/10 hover:border-puzzle-purple py-2.5 px-3 rounded-xl text-[10px] font-mono font-bold uppercase transition-all duration-300 tracking-wider flex items-center justify-center gap-1.5 cursor-pointer"
+                  >
+                    <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
+                    <span>Inspecionar</span>
+                  </button>
+                  <a 
+                    href="https://www.franquias.crocase.com.br/" 
+                    target="_blank" 
+                    class="w-11 h-10 bg-zinc-900/60 hover:bg-white text-white hover:text-black border border-white/10 rounded-xl flex items-center justify-center transition-all duration-300 shrink-0"
+                    title="Visitar"
+                  >
+                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 (ESCOLA MONTESSORI - TRAFEGO) -->
+          <div data-category="trafego" class="portfolio-item glass-panel-dark p-6 flex flex-col justify-between hover:border-puzzle-purple/50 transition-all duration-300 relative overflow-hidden group bg-gradient-to-b from-zinc-900/40 to-zinc-950/80 reveal-up" style="transition-delay: 120ms;">
+            <div class="absolute top-0 left-0 w-full h-[2px] bg-puzzle-purple scale-x-50 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+            <div class="flex flex-col h-full justify-between">
+              <div>
+                <!-- Project Image -->
+                <div class="case-media h-40 mb-5 rounded-xl border border-white/5 overflow-hidden relative transition-all duration-300 group-hover:border-puzzle-purple/30">
+                  <img loading="lazy" decoding="async" src="IMAGEM/IMAGEM/Semear.avif" alt="Escola Montessori" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+                </div>
+
+                <div class="flex justify-between items-center mb-4">
+                  <span class="font-mono text-[10px] text-puzzle-purple uppercase tracking-widest">// Tráfego pago </span>
+                  <span class="px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider rounded bg-puzzle-purple/15 text-puzzle-purple font-extrabold border border-puzzle-purple/20">-45% CPL</span>
+                </div>
+                <h3 class="font-title text-xl uppercase mb-2 text-white group-hover:text-puzzle-yellow transition-colors duration-300">Escola Montessori</h3>
+                <p class="font-subtitle text-xs text-zinc-400 mb-4 leading-relaxed line-clamp-2">
+                  Instituição educativa baseada na pedagogia científica Montessori com foco em captação humana de alunos.
+                </p>
+
+                <div class="flex items-center gap-3 px-3 py-2 bg-zinc-900/60 rounded-xl border border-white/5 mb-4">
+                  <div class="w-1.5 h-1.5 bg-puzzle-purple rounded-full animate-pulse shadow-[0_0_8px_#b489f3]"></div>
+                  <span class="font-mono text-[10px] text-zinc-300 uppercase tracking-tight">Entrega: Tráfego pago em alta escala</span>
+                </div>
+              </div>
+
+              <div>
+                <div class="border-t border-white/5 pt-3 font-mono text-[10px] text-zinc-500 space-y-0.5 mb-4">
+                  <p><span class="text-puzzle-purple font-bold">Problema crítico</span> Custo elevado em funis de pré-matrículas.</p>
+                  <p><span class="text-puzzle-purple font-bold">Resposta Puzzle</span> Campanhas contínuas e visitas guiadas agendadas.</p>
+                </div>
+                
+                <div class="flex gap-2">
+                  <button 
+                    onclick="openInspector('escolamontessori')" 
+                    class="flex-grow bg-zinc-900 hover:bg-puzzle-purple text-white hover:text-black border border-puzzle-purple/10 hover:border-puzzle-purple py-2.5 px-3 rounded-xl text-[10px] font-mono font-bold uppercase transition-all duration-300 tracking-wider flex items-center justify-center gap-1.5 cursor-pointer"
+                  >
+                    <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
+                    <span>Inspecionar</span>
+                  </button>
+                  <a
+                    href="contato.html"
+                    class="w-11 h-10 bg-zinc-900/60 text-zinc-400 hover:text-white hover:bg-puzzle-purple border border-white/5 hover:border-puzzle-purple rounded-xl flex items-center justify-center transition-all duration-300"
+                    title="Solicitar acesso ao projeto"
+                  >
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 (NIWA QUITANDA - TRAFEGO) -->
+          <div data-category="trafego" class="portfolio-item glass-panel-dark p-6 flex flex-col justify-between hover:border-puzzle-purple/50 transition-all duration-300 relative overflow-hidden group bg-gradient-to-b from-zinc-900/40 to-zinc-950/80 reveal-up" style="transition-delay: 160ms;">
+            <div class="absolute top-0 left-0 w-full h-[2px] bg-puzzle-purple scale-x-50 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+            <div class="flex flex-col h-full justify-between">
+              <div>
+                <!-- Project Image -->
+                <div class="case-media h-40 mb-5 rounded-xl border border-white/5 overflow-hidden relative transition-all duration-300 group-hover:border-puzzle-purple/30">
+                  <img loading="lazy" decoding="async" src="IMAGEM/IMAGEM/niwa.webp" alt="Niwa Quitanda" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+                </div>
+
+                <div class="flex justify-between items-center mb-4">
+                  <span class="font-mono text-[10px] text-puzzle-purple uppercase tracking-widest">// Tráfego pago </span>
+                  <span class="px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider rounded bg-puzzle-purple/15 text-puzzle-purple font-extrabold border border-puzzle-purple/20">180% DEL</span>
+                </div>
+                <h3 class="font-title text-xl uppercase mb-2 text-white group-hover:text-puzzle-yellow transition-colors duration-300">Niwa Quitanda</h3>
+                <p class="font-subtitle text-xs text-zinc-400 mb-4 leading-relaxed line-clamp-2">
+                  Quitanda e hortifruti premium focado em alimentacao saudavel e experiencia de compra organica diferenciada.
+                </p>
+
+                <div class="flex items-center gap-3 px-3 py-2 bg-zinc-900/60 rounded-xl border border-white/5 mb-4">
+                  <div class="w-1.5 h-1.5 bg-puzzle-purple rounded-full animate-pulse shadow-[0_0_8px_#b489f3]"></div>
+                  <span class="font-mono text-[10px] text-zinc-300 uppercase tracking-tight">Entrega: Tráfego pago focado em Delivery</span>
+                </div>
+              </div>
+
+              <div>
+                <div class="border-t border-white/5 pt-3 font-mono text-[10px] text-zinc-500 space-y-0.5 mb-4">
+                  <p><span class="text-puzzle-purple font-bold">Problema crítico</span> Tráfego exclusivo físico limitado localmente.</p>
+                  <p><span class="text-puzzle-purple font-bold">Resposta Puzzle</span> Funil de delivery geolocalizado a 5km de raio.</p>
+                </div>
+                
+                <div class="flex gap-2">
+                  <button 
+                    onclick="openInspector('niwaquitanda')" 
+                    class="flex-grow bg-zinc-900 hover:bg-puzzle-purple text-white hover:text-black border border-puzzle-purple/10 hover:border-puzzle-purple py-2.5 px-3 rounded-xl text-[10px] font-mono font-bold uppercase transition-all duration-300 tracking-wider flex items-center justify-center gap-1.5 cursor-pointer"
+                  >
+                    <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
+                    <span>Inspecionar</span>
+                  </button>
+                  <a
+                    href="contato.html"
+                    class="w-11 h-10 bg-zinc-900/60 text-zinc-400 hover:text-white hover:bg-puzzle-purple border border-white/5 hover:border-puzzle-purple rounded-xl flex items-center justify-center transition-all duration-300"
+                    title="Solicitar acesso ao projeto"
+                  >
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 (MOVIPLAST - LP) -->
+          <div data-category="lp" class="portfolio-item glass-panel-dark p-6 flex flex-col justify-between hover:border-puzzle-yellow/50 transition-all duration-300 relative overflow-hidden group bg-gradient-to-b from-zinc-900/40 to-zinc-950/80 reveal-up" style="transition-delay: 200ms;">
+            <div class="absolute top-0 left-0 w-full h-[2px] bg-puzzle-yellow scale-x-50 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+            <div class="flex flex-col h-full justify-between">
+              <div>
+                <!-- Project Image -->
+                <div class="case-media h-40 mb-5 rounded-xl border border-white/5 overflow-hidden relative transition-all duration-300 group-hover:border-puzzle-yellow/30">
+                  <img loading="lazy" decoding="async" src="IMAGEM/IMAGEM/moviplast.jpg" alt="Moviplast" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+                </div>
+
+                <div class="flex justify-between items-center mb-4">
+                  <span class="font-mono text-[10px] text-puzzle-yellow uppercase tracking-widest">// lading Page </span>
+                  <span class="px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider rounded bg-puzzle-yellow/15 text-puzzle-yellow font-extrabold border border-puzzle-yellow/20">SEO RANK 1</span>
+                </div>
+                <h3 class="font-title text-xl uppercase mb-2 text-white group-hover:text-puzzle-yellow transition-colors duration-300">Moviplast</h3>
+                <p class="font-subtitle text-xs text-zinc-400 mb-4 leading-relaxed line-clamp-2">
+                  Soluções industriais em embalagens plásticas e produção em larga escala para indústrias nacionais.
+                </p>
+
+                <div class="flex items-center gap-3 px-3 py-2 bg-zinc-900/60 rounded-xl border border-white/5 mb-4">
+                  <div class="w-1.5 h-1.5 bg-puzzle-yellow rounded-full animate-pulse shadow-[0_0_8px_#fdcb5d]"></div>
+                  <span class="font-mono text-[10px] text-zinc-300 uppercase tracking-tight">Entrega: Site Oficial e Arquitetura B2B</span>
+                </div>
+              </div>
+
+              <div>
+                <div class="border-t border-white/5 pt-3 font-mono text-[10px] text-zinc-500 space-y-0.5 mb-4">
+                  <p><span class="text-puzzle-yellow font-bold">Problema crítico</span> Divulgação desorganizada de catálogo complexo.</p>
+                  <p><span class="text-puzzle-yellow font-bold">Resposta Puzzle</span> Nova arquitetura B2B com canal ágil de orçamento.</p>
+                </div>
+                
+                <div class="flex gap-2">
+                  <button 
+                    onclick="openInspector('moviplast')" 
+                    class="flex-grow bg-zinc-900 hover:bg-puzzle-yellow text-white hover:text-black border border-puzzle-yellow/10 hover:border-puzzle-yellow py-2.5 px-3 rounded-xl text-[10px] font-mono font-bold uppercase transition-all duration-300 tracking-wider flex items-center justify-center gap-1.5 cursor-pointer"
+                  >
+                    <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
+                    <span>Inspecionar</span>
+                  </button>
+                  <a 
+                    href="http://moviplast.com.br" 
+                    target="_blank" 
+                    class="w-11 h-10 bg-zinc-900/60 hover:bg-white text-white hover:text-black border border-white/10 rounded-xl flex items-center justify-center transition-all duration-300 shrink-0"
+                    title="Visitar"
+                  >
+                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7 (CARRION CONTABILIDADE - SOFTWARE) -->
+          <div data-category="software" class="portfolio-item glass-panel-dark p-6 flex flex-col justify-between hover:border-puzzle-teal/50 transition-all duration-300 relative overflow-hidden group bg-gradient-to-b from-zinc-900/40 to-zinc-950/80 reveal-up" style="transition-delay: 240ms;">
+            <div class="absolute top-0 left-0 w-full h-[2px] bg-puzzle-teal scale-x-50 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+            <div class="flex flex-col h-full justify-between">
+              <div>
+                <!-- Project Image -->
+                <div class="case-media h-40 mb-5 rounded-xl border border-white/5 overflow-hidden relative transition-all duration-300 group-hover:border-puzzle-teal/30">
+                  <img loading="lazy" decoding="async" src="IMAGEM/IMAGEM/Nelson.png" alt="Carrion Contabilidade" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
+                </div>
+
+                <div class="flex justify-between items-center mb-4">
+                  <span class="font-mono text-[10px] text-puzzle-teal uppercase tracking-widest">// SAAS CONTÁBIL </span>
+                  <span class="px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider rounded bg-puzzle-teal/15 text-puzzle-teal font-extrabold border border-puzzle-teal/20">80% AGILIDADE</span>
+                </div>
+                <h3 class="font-title text-xl uppercase mb-2 text-white group-hover:text-puzzle-teal transition-colors duration-300">Carrion Contabilidade</h3>
+                <p class="font-subtitle text-xs text-zinc-400 mb-4 leading-relaxed line-clamp-2">
+                  Plataforma NW Fiscal. Geração de relatórios contábeis de extrema complexidade de forma automatizada.
+                </p>
+
+                <!-- Quick Metric Banner -->
+                <div class="flex items-center gap-3 px-3 py-2 bg-zinc-900/60 rounded-xl border border-white/5 mb-4">
+                  <div class="w-1.5 h-1.5 bg-puzzle-teal rounded-full animate-pulse shadow-[0_0_8px_#84d4d8]"></div>
+                  <span class="font-mono text-[10px] text-zinc-300 uppercase tracking-tight">Entrega: SaaS Fiscal + API Integration</span>
+                </div>
+              </div>
+
+              <div>
+                <div class="border-t border-white/5 pt-3 font-mono text-[10px] text-zinc-500 space-y-0.5 mb-4">
+                  <p><span class="text-puzzle-teal font-bold">Problema crítico</span> Consolidação manual demorada em 120+ filiais.</p>
+                  <p><span class="text-puzzle-teal font-bold">Resposta Puzzle</span> Processamento em microsserviços paralelos na nuvem.</p>
+                </div>
+                
+                <div class="flex gap-2">
+                  <button 
+                    onclick="openInspector('nelsonwilians')" 
+                    class="flex-grow bg-zinc-900 hover:bg-puzzle-teal text-white hover:text-black border border-puzzle-teal/10 hover:border-puzzle-teal py-2.5 px-3 rounded-xl text-[10px] font-mono font-bold uppercase transition-all duration-300 tracking-wider flex items-center justify-center gap-1.5 cursor-pointer"
+                  >
+                    <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
+                    <span>Inspecionar</span>
+                  </button>
+                  <a 
+                    href="https://contabil.puzzlems.com/" 
+                    target="_blank" 
+                    class="w-11 h-10 bg-zinc-900/60 hover:bg-white text-white hover:text-black border border-white/10 rounded-xl flex items-center justify-center transition-all duration-300 shrink-0"
+                    title="Visitar"
+                  >
+                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+
+        <!-- Operations Table / Compact List View -->
+        <div id="list-view-container" class="hidden w-full overflow-x-auto rounded-2xl border border-white/10 bg-zinc-900/10 backdrop-blur-md mb-12 view-fade-transition opacity-0 transform translate-y-4">
+          <table class="w-full text-left border-collapse min-w-[850px]">
+            <thead>
+              <tr class="border-b border-white/10 bg-white/[0.02] font-mono text-[9px] uppercase tracking-[0.2em] text-zinc-500">
+                <th class="py-4 px-6">ID / CASE</th>
+                <th class="py-4 px-6">CLIENTE / SOLU&Ccedil;&Atilde;O</th>
+                <th class="py-4 px-6">MÉTRICA CHAVE</th>
+                <th class="py-4 px-6">STACK E CANAIS</th>
+                <th class="py-4 px-6">STATUS / SLA</th>
+                <th class="py-4 px-6 text-right">ACAO</th>
+              </tr>
+            </thead>
+            <tbody id="list-view-body" class="font-subtitle text-xs text-zinc-300 divide-y divide-white/[0.03]">
+              <!-- Dynamic rows are computed and rendered here -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Elegant Empty State Container -->
+        <div id="empty-state" class="hidden py-16 px-6 text-center flex flex-col items-center justify-center border border-white/5 rounded-3xl bg-zinc-900/20 max-w-lg mx-auto w-full mb-12 reveal-up">
+          <div class="w-14 h-14 rounded-2xl bg-zinc-900/80 flex items-center justify-center border border-white/10 mb-5 text-puzzle-purple animate-pulse">
+            <i data-lucide="alert-circle" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-title text-base uppercase text-white mb-2 font-bold tracking-tight">Nenhum protocolo correspondente</h4>
+          <p class="font-subtitle text-xs text-zinc-500 mb-6 leading-relaxed">
+            Não localizamos nenhum projeto ativo com o filtro ou termo pesquisado. Tente termos genéricos como "AWS", "Ads", "SaaS", "ROAS" ou clique no botão abaixo.
+          </p>
+          <button id="reset-filters-btn" class="px-5 py-3 tracking-widest bg-white text-zinc-950 font-mono text-[9px] font-bold uppercase rounded-xl hover:bg-zinc-100 transition-all duration-300 transform active:scale-98 cursor-pointer shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:scale-102">
+            [ RESETAR_FILTRO_SISTEMA ]
+          </button>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- SYSTEM INSPECTOR DRAWER -->
+    <div id="inspector-overlay" onclick="closeInspector()" class="fixed inset-0 bg-black/75 backdrop-blur-sm z-[90] opacity-0 pointer-events-none transition-opacity duration-300"></div>
+    <div 
+      id="inspector-drawer" 
+      class="fixed bg-zinc-950/98 border border-white/10 z-[100] flex flex-col justify-between"
+      style="box-shadow: -20px 0 50px rgba(0,0,0,0.8);"
+    >
+      <!-- Header -->
+      <div class="p-6 border-b border-white/5 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div id="drawer-tag-container" class="w-10 h-10 rounded-xl flex items-center justify-center border">
+            <i id="drawer-icon" data-lucide="cpu" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div id="drawer-proto" class="font-mono text-[9px] text-zinc-500 uppercase tracking-widest">// DEPLOYMENT_SYS</div>
+            <h2 id="drawer-title" class="font-title text-xl uppercase text-white tracking-tight">Project Title</h2>
+          </div>
+        </div>
+        <button onclick="closeInspector()" class="p-2 text-zinc-400 hover:text-white hover:bg-white/5 rounded-lg transition-colors font-mono text-[10px] cursor-pointer border border-white/5 uppercase tracking-wide px-3">
+          [ FECHAR_X ]
+        </button>
+      </div>
+
+      <!-- Scrollable Content -->
+      <div class="flex-1 overflow-y-auto p-6 space-y-6">
+        
+        <!-- Primary KPI Stats Bento -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-zinc-900/40 border border-white/5 p-4 rounded-xl relative overflow-hidden">
+            <span class="font-mono text-[9px] text-zinc-500 uppercase block mb-1">Métrica de Impacto</span>
+            <span id="drawer-metric" class="font-title text-2xl font-bold block text-white">Metrics</span>
+          </div>
+          <div class="bg-zinc-900/40 border border-white/5 p-4 rounded-xl relative overflow-hidden">
+            <span class="font-mono text-[9px] text-zinc-500 uppercase block mb-1">Performance Real</span>
+            <span id="drawer-submetric" class="font-title text-2xl font-bold block text-white">Submetric</span>
+          </div>
+        </div>
+
+        <!-- Strategy Synopsis -->
+        <div class="bg-zinc-900/20 border border-white/5 p-5 rounded-2xl relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-2 h-2 rounded-full bg-zinc-800 m-4"></div>
+          <span class="font-mono text-[9px] text-zinc-500 uppercase block mb-2">// ESCOPO OPERACIONAL</span>
+          <p id="drawer-strategy" class="font-subtitle text-xs text-zinc-300 leading-relaxed">
+            Detailed strategy goes here...
+          </p>
+        </div>
+
+        <!-- Puzzle Delivery Breakdown -->
+        <div class="bg-zinc-900/20 border border-white/5 p-5 rounded-2xl relative overflow-hidden">
+          <span class="font-mono text-[9px] text-zinc-500 uppercase block mb-3">// O QUE A PUZZLE FEZ</span>
+          <div id="drawer-workflow" class="drawer-action-grid"></div>
+        </div>
+
+        <!-- Key Specs List / Tech Stack -->
+        <div>
+          <span class="font-mono text-[9px] text-zinc-500 uppercase block mb-3">// ARQUITETURA E TECNOLOGIA</span>
+          <div id="drawer-tech-grid" class="flex flex-wrap gap-1.5 mb-4">
+            <!-- Dynamic badges go here -->
+          </div>
+          
+          <div class="space-y-3 bg-zinc-900/30 p-4 rounded-xl border border-white/5 font-mono text-[10px]">
+            <div class="flex justify-between py-1 border-b border-white/5">
+              <span class="text-zinc-500">STATUS OPERACIONAL</span>
+              <span class="text-puzzle-teal font-extrabold uppercase tracking-widest">[ ONLINE & ESTAVEL ]</span>
+            </div>
+            <div class="flex justify-between py-1 border-b border-white/5">
+              <span class="text-zinc-500">DATABASE INTEGRADO</span>
+              <span id="drawer-spec-db" class="text-white font-bold">Active Node</span>
+            </div>
+            <div class="flex justify-between py-1">
+              <span class="text-zinc-500">SLA DE RESPOSTA</span>
+              <span id="drawer-spec-sla" class="text-white font-bold">0.32s avg</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Action Footer -->
+      <div class="p-6 border-t border-white/5 bg-zinc-950 flex gap-4">
+        <a 
+          id="drawer-live-url"
+          href="contato.html" 
+          target="_blank" 
+          class="flex-1 text-center bg-white text-zinc-950 hover:bg-zinc-100 py-3.5 px-6 rounded-xl font-mono text-[10px] font-bold uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2"
+        >
+          <span>Acessar Plataforma Ativa</span>
+          <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- FOOTER (Shared structure) -->
+    <footer class="bg-zinc-950 text-white py-16 border-t border-white/5 relative z-10 animate-fade-in">
+      <div class="max-w-7xl mx-auto px-6 md:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <div class="md:col-span-2 flex flex-col text-left">
+            <div class="flex items-center gap-3 mb-6">
+              <svg viewBox="0 0 100 100" class="w-8 h-8 fill-white">
+                <path d="M78 40h-8V32c0-8.8-7.2-16-16-16s-16 7.2-16 16v8h-8c-8.8 0-16 7.2-16 16s7.2 16 16 16h8v8c0 8.8 7.2 16 16 16s16-7.2 16-16v-8h8c8.8 0 16-7.2 16-16s-7.2-16-16-16zm-24 40c0 4.4-3.6 8-8 8s-8-3.6-8-8v-8h16v8zm-8-32c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z" />
+              </svg>
+              <span class="font-title text-3xl tracking-tighter">puzzle</span>
+            </div>
+            <p class="font-mono text-xs text-white/40 leading-relaxed max-w-sm uppercase tracking-widest">
+              Growth Marketing e Desenvolvimento. <br/>
+              Engenharia e Marketing para 1B Valuation.
+            </p>
+          </div>
+          
+          <div>
+            <h4 class="font-mono text-[10px] text-puzzle-teal uppercase tracking-widest mb-6 border-b border-white/5 pb-2">/ Nossos Serviços</h4>
+            <ul class="space-y-3 font-title text-sm uppercase text-white/60">
+              <li><a href="servicos-software.html" class="hover:text-puzzle-teal transition-colors">Desenvolvimento de SaaS</a></li>
+              <li><a href="servicos-marketing.html" class="hover:text-puzzle-yellow transition-colors">Tráfego & Estratégia</a></li>
+              <li><a href="servicos-dooh.html" class="hover:text-puzzle-pink transition-colors">OOH / Outdoors</a></li>
+            </ul>
+          </div>
+
+          <div>
+             <h4 class="font-mono text-[10px] text-puzzle-yellow uppercase tracking-widest mb-6 border-b border-white/5 pb-2">/ Contatos</h4>
+             <ul class="space-y-3 font-title text-sm uppercase text-white/60">
+              <li><a href="contato.html" class="hover:text-puzzle-yellow transition-colors">Registrar Contato</a></li>
+              <li><a href="contato.html" class="hover:text-white transition-colors">Instagram</a></li>
+              <li><a href="contato.html" class="hover:text-white transition-colors">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 mt-8 opacity-40 font-mono text-[10px] uppercase tracking-widest">
+            <span>© 2024 Puzzle Systems. All Rights Reserved.</span>
+            <div class="flex gap-6">
+                <span>Status: Optimal</span>
+                <span>Latency: 12ms</span>
+            </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SHARED INCLUDES -->
+    <a href="https://wa.me/5515996135084" target="_blank" class="fixed bottom-6 right-6 z-[60] group flex items-center gap-2">
+        <div class="hidden md:flex glass-panel-dark px-4 py-2 font-mono text-[10px] uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all translate-x-2 group-hover:translate-x-0 order-1 text-puzzle-yellow border-puzzle-yellow/30">
+            Send Data Packet
+        </div>
+        <div class="w-14 h-14 bg-puzzle-yellow text-black rounded-[2rem] flex items-center justify-center shadow-[0_0_20px_rgba(255,217,61,0.3)] hover:scale-105 transition-all duration-300 order-2 z-10 relative overflow-hidden tech-button border-none">
+             <i data-lucide="message-square" class="w-6 h-6 relative z-10"></i>
+        </div>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script type="module" src="assets/js/main.js"></script>
+
+    <!-- Integrated Dynamic Functions -->
+    <script>
+      // Specs Database with integrated performance weight metrics
+      const caseSpecs = {
+        tectraffic: {
+          proto: '// CASE_01',
+          category: 'lp',
+          title: 'TecTraffic',
+          metric: '',
+          submetric: 'Tráfego Inteligente',
+          strategy: 'Planejamento e execucao de trafego pago estrategico integrado a novo site institucional de alta performance, comunicando o valor em mobilidade urbana inteligente e solucoes modernas de transito.',
+          tech: ['Tailwind CSS', 'Google Ads', 'Meta Ads', 'SEO Engine', 'Vite JS'],
+          db: 'Local Indexing Node',
+          sla: '99.9% Site Uptime',
+          url: 'https://www.tectraffic.com/',
+          colorClass: 'bg-puzzle-yellow/10 text-puzzle-yellow border-puzzle-yellow/20',
+          colorHex: '#FDCB5D',
+          slaWeight: 92
+        },
+        menucozinha: {
+          proto: '// CASE_02',
+          category: 'lp',
+          title: 'Menu Cozinha',
+          metric: '',
+          submetric: '',
+          strategy: 'Desenvolvimento de presença institucional gourmet aliando campanhas geolocalizadas de tráfego pago direcionadas ao público de alta renda, diminuindo absenteísmo de reservas virtuais.',
+          tech: ['Meta Conversions', 'Analytics G4', 'WhatsApp Business', 'HTML5 Semantic'],
+          db: 'Direct Reservas Node',
+          sla: 'Instant reservation loading',
+          url: 'http://menucozinhaevinho.com.br/',
+          colorClass: 'bg-puzzle-yellow/10 text-puzzle-yellow border-puzzle-yellow/20',
+          colorHex: '#FDCB5D',
+          slaWeight: 88
+        },
+        crocase: {
+          proto: '// CASE_03',
+          category: 'trafego',
+          title: 'Crocase',
+          metric: '',
+          submetric: '',
+          strategy: 'Estratégia integrada de captação e capilaridade de franquias e anúncios de Meta Ads e Google Ads, operando com automações ativas do WhatsApp Cloud API para qualificação inteligente.',
+          tech: ['Meta Ads API', 'Google Ads SDK', 'WhatsApp Cloud API', 'HubSpot'],
+          db: 'HubSpot Sync DB',
+          sla: 'Lead synced in 1.4s',
+          url: 'https://www.franquias.crocase.com.br/',
+          colorClass: 'bg-puzzle-purple/10 text-puzzle-purple border-puzzle-purple/20',
+          colorHex: '#B489F3',
+          slaWeight: 80
+        },
+        escolamontessori: {
+          proto: '// CASE_04',
+          category: 'trafego',
+          title: 'Escola Montessori',
+          metric: '',
+          submetric: 'Matrículas Ativas',
+          strategy: 'Modelagem de funil de vendas e tráfego pago altamente segmentado direcionado a pais de alunos em busca de ensino humanizado, focado na metodologia Montessori.',
+          tech: ['Meta Ads Suite', 'Google Search Ads', 'Landing Page Analytics', 'CRM Active'],
+          db: 'RD Station Lead Store',
+          sla: '99.98% Form Deliverability',
+          url: 'contato.html',
+          colorClass: 'bg-puzzle-purple/10 text-puzzle-purple border-puzzle-purple/20',
+          colorHex: '#B489F3',
+          slaWeight: 85
+        },
+        niwaquitanda: {
+          proto: '// CASE_05',
+          category: 'trafego',
+          title: 'Niwa Quitanda',
+          metric: '180% Delivery Growth',
+          submetric: 'Alimentação Saudável',
+          strategy: 'Campanhas hiper-locais de tráfego pago com foco de conversão em compras de hortifruti premium no delivery, otimizando as conversões e anúncios recorrentemente por proximidade física.',
+          tech: ['Meta Conversions API', 'Geo-Targeting Spec', 'Google Local Kampagnes', 'Shopify Ads'],
+          db: 'Shopify Checkout DB',
+          sla: 'Sub-minute pixel dispatch',
+          url: 'contato.html',
+          colorClass: 'bg-puzzle-purple/10 text-puzzle-purple border-puzzle-purple/20',
+          colorHex: '#B489F3',
+          slaWeight: 90
+        },
+        moviplast: {
+          proto: '// CASE_06',
+          category: 'lp',
+          title: 'Moviplast',
+          metric: '100% SEO Rank 1',
+          submetric: 'Indústria Plástica',
+          strategy: 'Arquitetura e desenvolvimento de site institucional corporativo otimizado para motores de busca com design moderno, visando acelerar orçamentos de embalagens industriais B2B.',
+          tech: ['Vite JavaScript', 'SEO Semantics', 'Speed Optimization', 'Tailwind Grid'],
+          db: 'NoSQL Contact Ledger',
+          sla: '99.98% High Speed Load',
+          url: 'http://moviplast.com.br',
+          colorClass: 'bg-puzzle-yellow/10 text-puzzle-yellow border-puzzle-yellow/20',
+          colorHex: '#FDCB5D',
+          slaWeight: 94
+        },
+        nelsonwilians: {
+         proto: '// CASE_07',
+        category: 'software',
+        title: 'Sistema Contábil Fiscal',
+        metric: '80% Menos Esforço Manual',
+        submetric: 'Plataforma de Monitoramento Tributário',
+        strategy: 'Desenvolvimento de plataforma SaaS para automação fiscal, monitoramento ativo de PER/DCOMP e centralização de processos contábeis. A solução reduz consultas manuais, antecipa pendências e amplia a capacidade operacional de escritórios sem aumento proporcional da equipe.',
+        tech: ['NextJS Server-Side', 'FastAPI Proxy', 'PostgreSQL Cluster', 'Tailwind CSS', 'AWS S3 Cloud'],
+        db: 'PostgreSQL Mutex Master',
+        sla: '99.98% API Response',
+        url: 'https://contabil.puzzlems.com/',
+        colorClass: 'bg-puzzle-teal/10 text-puzzle-teal border-puzzle-teal/20',
+        colorHex: '#84D4D8',
+        slaWeight: 96
+
+        },
+        lolapremium: {
+          proto: '// CASE_08',
+          category: 'software',
+          title: 'Lola Premium Lucros',
+          metric: 'R$12M+ Transacionados',
+          submetric: 'SaaS Billing Multi-tenant',
+          strategy: 'Modelagem de software para apuração de lucros, faturamento, conciliação e repasse automático entre grupos corporativos integrado a Gateways bancários com ledger criptografado.',
+          tech: ['TypeScript Node', 'Redis Cache', 'Boleto/Pix API', 'ChartJS Core', 'Vite CSS'],
+          db: 'DynamoDB Ledger Stack',
+          sla: 'SaaS dashboard load 200ms',
+          url: 'contato.html',
+          colorClass: 'bg-puzzle-teal/10 text-puzzle-teal border-puzzle-teal/20',
+          colorHex: '#84D4D8',
+          slaWeight: 93
+        }
+      };
+
+      let activeLogInterval = null;
+      let telemetryTimer = null;
+      let telemetryPoints = Array(20).fill(50);
+      let simSpeed = 400; // default polling
+      let currentInspectorId = null;
+      let activeSimTab = 'term';
+
+      const workflowByCategory = {
+        lp: [
+          ['Diagnóstico', 'Organizamos oferta, público e promessa para reduzir ruído comercial.'],
+          ['Construção', 'Criamos uma presença digital objetiva, rápida e preparada para conversão.'],
+          ['Otimização', 'Acompanhamos métricas para melhorar clareza, tráfego e geração de demanda.']
+        ],
+        trafego: [
+          ['Diagnóstico', 'Mapeamos público, dor e intenção para evitar campanhas genéricas.'],
+          ['Execução', 'Estruturamos campanhas, criativos e rotas de lead com rastreio claro.'],
+          ['Otimização', 'Ajustamos verba, canal e mensagem com foco em previsibilidade comercial.']
+        ],
+        software: [
+          ['Diagnóstico', 'Entendemos o processo real antes de transformar operação em sistema.'],
+          ['Arquitetura', 'Desenhamos módulos, integrações e fluxos para reduzir trabalho manual.'],
+          ['Entrega', 'Implementamos uma base escalável, segura e simples de acompanhar.']
+        ],
+        dooh: [
+          ['Planejamento', 'Definimos praça, contexto e frequência para presença urbana relevante.'],
+          ['Ativação', 'Conectamos mídia exterior digital a uma narrativa clara de marca.'],
+          ['Leitura', 'Acompanhamos veiculação e impacto para orientar os próximos ciclos.']
+        ]
+      };
+
+      function switchDrawerTab(tab) {
+        activeSimTab = tab;
+        const btnTerm = document.getElementById('sim-tab-term');
+        const btnChart = document.getElementById('sim-tab-chart');
+        const containerTerm = document.getElementById('sim-container-term');
+        const containerChart = document.getElementById('sim-container-chart');
+        
+        if (tab === 'term') {
+          if (btnTerm) btnTerm.className = "flex-1 py-1.5 text-center rounded-lg text-black bg-puzzle-purple border border-white/5 font-mono text-[9px] font-extrabold tracking-widest cursor-pointer transition-all duration-300 shadow-[0_2px_8px_rgba(180,137,243,0.3)]";
+          if (btnChart) btnChart.className = "flex-1 py-1.5 text-center rounded-lg text-zinc-500 hover:text-white font-mono text-[9px] font-bold tracking-widest cursor-pointer transition-all duration-300";
+          if (containerTerm) containerTerm.classList.remove('hidden');
+          if (containerChart) containerChart.classList.add('hidden');
+        } else {
+          if (btnChart) btnChart.className = "flex-1 py-1.5 text-center rounded-lg text-black bg-puzzle-purple border border-white/5 font-mono text-[9px] font-extrabold tracking-widest cursor-pointer transition-all duration-300 shadow-[0_2px_8px_rgba(180,137,243,0.3)]";
+          if (btnTerm) btnTerm.className = "flex-1 py-1.5 text-center rounded-lg text-zinc-500 hover:text-white font-mono text-[9px] font-bold tracking-widest cursor-pointer transition-all duration-300";
+          if (containerChart) containerChart.classList.remove('hidden');
+          if (containerTerm) containerTerm.classList.add('hidden');
+          drawTelemetry();
+        }
+      }
+
+      function setSimSpeed(speed) {
+        simSpeed = speed;
+        // Reset visuals of buttons
+        [1000, 400, 120].forEach(s => {
+          const btn = document.getElementById('sim-speed-' + s);
+          if (btn) {
+            if (s === speed) {
+              btn.className = "px-2 py-0.5 rounded border border-puzzle-purple/40 text-puzzle-purple font-bold text-[8px] bg-puzzle-purple/10 cursor-pointer";
+            } else {
+              btn.className = "px-2 py-0.5 rounded bg-zinc-900 border border-white/5 text-zinc-400 text-[8px] cursor-pointer hover:bg-zinc-800";
+            }
+          }
+        });
+
+        // Clear and restart timer
+        if (telemetryTimer) clearInterval(telemetryTimer);
+        telemetryTimer = setInterval(updateTelemetry, simSpeed);
+      }
+
+      function updateTelemetry() {
+        if (!currentInspectorId) return;
+        const item = caseSpecs[currentInspectorId];
+        let lastVal = telemetryPoints[telemetryPoints.length - 1];
+        let change = (Math.random() - 0.5) * 16;
+        let newVal = Math.max(10, Math.min(90, lastVal + change));
+        
+        telemetryPoints.shift();
+        telemetryPoints.push(newVal);
+        
+        drawTelemetry();
+
+        // Output text based on project type
+        const valLabel = document.getElementById('live-metric-val');
+        if (valLabel) {
+          if (item.category === 'software') {
+            valLabel.innerText = `${Math.round(20 + newVal * 0.8)}% CPU`;
+          } else if (item.category === 'marketing') {
+            let mult = (2.5 + newVal * 0.1).toFixed(1);
+            valLabel.innerText = `${mult}x ROAS`;
+          } else {
+            valLabel.innerText = `${Math.round(15 + newVal * 0.4)}ms LAG`;
+          }
+        }
+      }
+
+      function drawTelemetry() {
+        const path = document.getElementById('live-chart-path');
+        const area = document.getElementById('live-chart-area');
+        const cursor = document.getElementById('live-chart-cursor');
+        if (!path || !area || !cursor) return;
+
+        let pathD = "M 0 " + telemetryPoints[0];
+        for (let i = 1; i < telemetryPoints.length; i++) {
+          let x = i * (400 / (telemetryPoints.length - 1));
+          let y = telemetryPoints[i];
+          pathD += ` L ${x} ${y}`;
+        }
+        path.setAttribute('d', pathD);
+
+        let areaD = pathD + ` L 400 100 L 0 100 Z`;
+        area.setAttribute('d', areaD);
+
+        cursor.setAttribute('cx', 400);
+        cursor.setAttribute('cy', telemetryPoints[telemetryPoints.length - 1]);
+      }
+
+      function openInspector(caseId) {
+        const item = caseSpecs[caseId];
+        if(!item) return;
+
+        currentInspectorId = caseId;
+
+        // Dynamic Text
+        document.getElementById('drawer-proto').innerText = item.proto;
+        document.getElementById('drawer-title').innerText = item.title;
+        document.getElementById('drawer-metric').innerText = item.metric;
+        document.getElementById('drawer-submetric').innerText = item.submetric;
+        document.getElementById('drawer-strategy').innerText = item.strategy;
+        document.getElementById('drawer-spec-db').innerText = item.db;
+        document.getElementById('drawer-spec-sla').innerText = item.sla;
+
+        const workflow = document.getElementById('drawer-workflow');
+        if (workflow) {
+          const steps = workflowByCategory[item.category] || workflowByCategory.software;
+          workflow.style.setProperty('--case-accent', item.colorHex);
+          workflow.innerHTML = steps.map(([label, text], index) => `
+            <div class="drawer-action-card">
+              <span>${String(index + 1).padStart(2, '0')} / ${label}</span>
+              <strong>${text}</strong>
+            </div>
+          `).join('');
+        }
+        
+        // Link target
+        const liveBtn = document.getElementById('drawer-live-url');
+        liveBtn.href = item.url;
+        
+        // Style container badge
+        const tagContainer = document.getElementById('drawer-tag-container');
+        tagContainer.className = `w-10 h-10 rounded-xl flex items-center justify-center border ${item.colorClass}`;
+        
+        // Tech Badges Builder
+        const techGrid = document.getElementById('drawer-tech-grid');
+        techGrid.innerHTML = '';
+        item.tech.forEach(t => {
+          const badge = document.createElement('span');
+          badge.className = 'px-2.5 py-1 bg-zinc-900 border border-white/5 font-mono text-[9px] text-zinc-300 rounded uppercase tracking-wider';
+          badge.textContent = t;
+          techGrid.appendChild(badge);
+        });
+
+        // Trigger animations
+        const drawer = document.getElementById('inspector-drawer');
+        const overlay = document.getElementById('inspector-overlay');
+        
+        drawer.style.transform = '';
+        drawer.classList.add('is-open');
+        overlay.style.opacity = '1';
+        overlay.style.pointerEvents = 'auto';
+        document.body.style.overflow = 'hidden';
+
+        if (telemetryTimer) {
+          clearInterval(telemetryTimer);
+          telemetryTimer = null;
+        }
+      }
+
+      function closeInspector() {
+        const drawer = document.getElementById('inspector-drawer');
+        const overlay = document.getElementById('inspector-overlay');
+        
+        drawer.style.transform = '';
+        drawer.classList.remove('is-open');
+        overlay.style.opacity = '0';
+        overlay.style.pointerEvents = 'none';
+        document.body.style.overflow = '';
+
+        currentInspectorId = null;
+
+        if(activeLogInterval) {
+          clearInterval(activeLogInterval);
+          activeLogInterval = null;
+        }
+
+        if (telemetryTimer) {
+          clearInterval(telemetryTimer);
+          telemetryTimer = null;
+        }
+      }
+
+      function startLogEmulator(caseId, url) {
+        const terminal = document.getElementById('drawer-terminal');
+        if (!terminal) return;
+        terminal.innerHTML = '';
+        
+        if(activeLogInterval) {
+          clearInterval(activeLogInterval);
+        }
+
+        const logPhrases = [
+          `INIT_NODE: loading session.config... OK`,
+          `MUTEX_SHIELD: starting telemetry handshakes...`,
+          `SEC_AUDIT: core certificate verified`,
+          `DATA_STREAM: querying metrics from ${caseId}.active.db...`,
+          `KPI_POLL: metrics payload parsed successfully`,
+          `PERF_CHECK: response time optimization enabled`,
+          `ROUTING_PROT: validating proxy redirect logs`,
+          `STATUS: target metrics nominal`,
+          `SUCCESS: linked node [${url}] active`,
+          `MONITOR: telemetry console online // idle.`
+        ];
+
+        let index = 0;
+        const addLine = () => {
+          if(index < logPhrases.length) {
+            const time = new Date().toLocaleTimeString('pt-BR');
+            const row = document.createElement('div');
+            row.className = 'flex gap-2 border-b border-white/[0.02] py-0.5 font-mono text-[9px]';
+            row.innerHTML = `<span class="text-zinc-600">[${time}]</span> <span class="text-zinc-300">> ${logPhrases[index]}</span>`;
+            terminal.appendChild(row);
+            terminal.scrollTop = terminal.scrollHeight;
+            index++;
+          } else {
+            clearInterval(activeLogInterval);
+            activeLogInterval = null;
+          }
+        };
+
+        addLine();
+        activeLogInterval = setInterval(addLine, 600);
+      }
+
+      // Integrated Filter, Search, Quick Tags, Sorters and Dynamic Layout Toggles
+      document.addEventListener('DOMContentLoaded', () => {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        const portfolioGrid = document.getElementById('portfolio-grid');
+        const searchInput = document.getElementById('case-search');
+        
+        // Sorters & View controls
+        const sortSelector = document.getElementById('sort-selector');
+        const viewGridBtn = document.getElementById('view-grid-btn');
+        const viewListBtn = document.getElementById('view-list-btn');
+        const resultsCountNumbers = document.getElementById('results-count-numbers');
+        const listContainer = document.getElementById('list-view-container');
+        const emptyState = document.getElementById('empty-state');
+        const resetFiltersBtn = document.getElementById('reset-filters-btn');
+
+        const portfolioMobileMq = window.matchMedia('(max-width: 767px)');
+        const setupPortfolioMobileCopy = () => {
+          if (!portfolioMobileMq.matches) return;
+
+          const setupExecutiveAccordions = () => {
+            const accordionCards = document.querySelectorAll('.portfolio-kpi-card, .validation-model > div');
+
+            accordionCards.forEach((card, index) => {
+              if (card.dataset.mobileAccordionReady === 'true') return;
+              const copy = card.querySelector('p');
+              if (!copy) return;
+              const tone = card.className.includes('puzzle-yellow')
+                ? 'yellow'
+                : card.className.includes('puzzle-pink')
+                  ? 'pink'
+                  : card.className.includes('puzzle-purple')
+                    ? 'purple'
+                    : 'teal';
+
+              card.dataset.mobileAccordionReady = 'true';
+              card.dataset.tone = tone;
+              card.classList.add('portfolio-accordion-trigger');
+              card.setAttribute('role', 'button');
+              card.setAttribute('tabindex', '0');
+              card.setAttribute('aria-expanded', 'false');
+
+              const copyId = copy.id || `portfolio-accordion-copy-${index}`;
+              copy.id = copyId;
+              card.setAttribute('aria-controls', copyId);
+
+              const content = document.createElement('div');
+              content.className = 'portfolio-accordion-content';
+              copy.parentNode.insertBefore(content, copy);
+              content.appendChild(copy);
+
+              const icon = document.createElement('span');
+              icon.className = 'portfolio-accordion-icon';
+              icon.setAttribute('aria-hidden', 'true');
+              icon.innerHTML = '<i data-lucide="plus" class="icon-plus"></i><i data-lucide="minus" class="icon-minus"></i>';
+              card.appendChild(icon);
+
+              const hint = document.createElement('span');
+              hint.className = 'portfolio-accordion-hint';
+              hint.textContent = 'Toque para detalhes';
+              card.appendChild(hint);
+
+              const toggleCard = () => {
+                const isOpen = card.classList.toggle('is-open');
+                card.setAttribute('aria-expanded', String(isOpen));
+              };
+
+              card.addEventListener('click', (event) => {
+                if (event.target.closest('a, button')) return;
+                toggleCard();
+              });
+
+              card.addEventListener('keydown', (event) => {
+                if (event.key !== 'Enter' && event.key !== ' ') return;
+                event.preventDefault();
+                toggleCard();
+              });
+            });
+          };
+
+          setupExecutiveAccordions();
+
+          const getCaseIdFromButton = (card) => {
+            const btn = card.querySelector('button[onclick]');
+            if (!btn) return '';
+            const match = btn.getAttribute('onclick').match(/openInspector\('([^']+)'\)/);
+            return match ? match[1] : '';
+          };
+
+          const getTone = (card, fallback = 'purple') => {
+            if (card?.className.includes('puzzle-yellow')) return 'yellow';
+            if (card?.className.includes('puzzle-pink')) return 'pink';
+            if (card?.className.includes('puzzle-teal')) return 'teal';
+            return fallback;
+          };
+
+          portfolioItems.forEach((card, index) => {
+            if (card.dataset.mobileCaseReady === 'true') return;
+
+            const subtitle = card.querySelector('.font-subtitle.line-clamp-2');
+            const actions = card.querySelector('.flex.gap-2');
+            if (!subtitle || !actions) return;
+
+            const tone = getTone(card);
+            card.dataset.mobileCaseReady = 'true';
+            card.classList.add('is-mobile-compact');
+            subtitle.id = subtitle.id || `portfolio-card-summary-${index}`;
+            subtitle.classList.add('portfolio-mobile-copy');
+            subtitle.style.setProperty('--portfolio-mobile-lines', '1');
+
+            const toggle = document.createElement('button');
+            toggle.type = 'button';
+            toggle.className = 'portfolio-mobile-toggle';
+            toggle.dataset.tone = tone;
+            toggle.setAttribute('aria-controls', subtitle.id);
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.innerHTML = '<span>Ver contexto</span><i data-lucide="chevron-down" aria-hidden="true"></i>';
+
+            const setExpanded = (isOpen) => {
+              card.classList.toggle('is-mobile-expanded', isOpen);
+              subtitle.classList.toggle('is-expanded', isOpen);
+              toggle.setAttribute('aria-expanded', String(isOpen));
+              const label = toggle.querySelector('span');
+              if (label) label.textContent = isOpen ? 'Ocultar contexto' : 'Ver contexto';
+            };
+
+            toggle.addEventListener('click', () => {
+              setExpanded(!card.classList.contains('is-mobile-expanded'));
+            });
+
+            subtitle.insertAdjacentElement('afterend', toggle);
+          });
+
+          if (window.lucide) window.lucide.createIcons();
+        };
+
+        setupPortfolioMobileCopy();
+        portfolioMobileMq.addEventListener?.('change', setupPortfolioMobileCopy);
+
+        let currentFilter = 'all';
+        let currentSearchQuery = '';
+        let currentSort = 'relevant';
+        let activeViewMode = 'grid'; // 'grid' | 'table'
+
+        // Helper: retrieve key matching card reference
+        const getCaseIdFromCard = (card) => {
+          const btn = card.querySelector('button[onclick]');
+          if (!btn) return '';
+          const match = btn.getAttribute('onclick').match(/openInspector\('([^']+)'\)/);
+          return match ? match[1] : '';
+        };
+
+        // Escaping tags text highlighting
+        const highlightText = (text, query) => {
+          if (!query) return text;
+          const escaped = query.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+          const regex = new RegExp(`(${escaped})`, 'gi');
+          return text.replace(regex, '<mark class="highlight-match">$1</mark>');
+        };
+
+        // Render popular quick tech chips
+        const popularTechs = [
+          'Tailwind CSS', 'Google Ads', 'Meta Ads', 'WhatsApp', 'SEO Engine', 
+          'Analytics', 'HubSpot', 'Vite JS'
+        ];
+        
+        const tagsContainer = document.getElementById('tech-tags-container');
+        if (tagsContainer) {
+          tagsContainer.innerHTML = '';
+          popularTechs.forEach(tech => {
+            const pill = document.createElement('button');
+            pill.className = 'px-3.5 py-2 font-mono text-[9px] uppercase tracking-wider rounded-xl border border-white/5 bg-zinc-900/40 text-white/50 hover:text-white hover:border-white/20 transition-all duration-300 cursor-pointer whitespace-nowrap';
+            pill.textContent = tech;
+            
+            pill.addEventListener('click', () => {
+              if (currentSearchQuery.toLowerCase() === tech.toLowerCase()) {
+                currentSearchQuery = '';
+                if (searchInput) searchInput.value = '';
+              } else {
+                currentSearchQuery = tech;
+                if (searchInput) searchInput.value = tech.toUpperCase();
+              }
+              updateGrid();
+            });
+            tagsContainer.appendChild(pill);
+          });
+        }
+
+        const updateGrid = () => {
+          const caseKeys = Object.keys(caseSpecs);
+          const totalRecords = caseKeys.length;
+
+          // 1. Filter Keys
+          const filteredKeys = caseKeys.filter(key => {
+            const spec = caseSpecs[key];
+            const matchesCategory = (currentFilter === 'all' || spec.category === currentFilter);
+            if (!matchesCategory) return false;
+
+            if (!currentSearchQuery) return true;
+            const query = currentSearchQuery.toLowerCase();
+            const searchHaystack = `${spec.title} ${spec.tech.join(' ')} ${spec.strategy} ${spec.db} ${spec.sla} ${spec.metric} ${spec.submetric} ${spec.category}`.toLowerCase();
+            return searchHaystack.includes(query);
+          });
+
+          // 2. Sort Keys
+          if (currentSort === 'alpha-asc') {
+            filteredKeys.sort((a, b) => caseSpecs[a].title.localeCompare(caseSpecs[b].title));
+          } else if (currentSort === 'alpha-desc') {
+            filteredKeys.sort((a, b) => caseSpecs[b].title.localeCompare(caseSpecs[a].title));
+          } else if (currentSort === 'sla-desc') {
+            filteredKeys.sort((a, b) => caseSpecs[b].slaWeight - caseSpecs[a].slaWeight);
+          } // 'relevant' retains original array sequence
+
+          // 3. Update Results Count & Average Metric Telementry (Live roll-up calculations)
+          if (resultsCountNumbers) {
+            resultsCountNumbers.innerText = `${filteredKeys.length} DE ${totalRecords} ATIVOS`;
+          }
+
+          let sumSla = 0;
+          let sumRoas = 0;
+          let countRoas = 0;
+          filteredKeys.forEach(k => {
+            const spec = caseSpecs[k];
+            sumSla += spec.slaWeight || 90;
+            if (spec.category === 'trafego' || spec.category === 'lp') {
+              let roasVal = parseFloat(spec.metric.replace(/[^0-9.]/g, ''));
+              if (isNaN(roasVal)) roasVal = 5.0; // default safe baseline fallbacks
+              sumRoas += roasVal;
+              countRoas++;
+            }
+          });
+          const avgSla = filteredKeys.length ? Math.round(sumSla / filteredKeys.length) : 94;
+          const avgRoas = countRoas ? (sumRoas / countRoas).toFixed(1) : "6.1";
+
+          const slaLabel = document.getElementById('results-sla-avg');
+          const roasLabel = document.getElementById('results-roas-avg');
+          if (slaLabel) slaLabel.innerText = `${avgSla}%`;
+          if (roasLabel) roasLabel.innerText = `${avgRoas}x`;
+
+          // 4. Update Popular Tech Tags Highlight states
+          if (tagsContainer) {
+            const borderPills = tagsContainer.querySelectorAll('button');
+            borderPills.forEach(pill => {
+              const name = pill.textContent.toLowerCase();
+              const isSearchingThis = currentSearchQuery.toLowerCase() === name || (currentSearchQuery && name.includes(currentSearchQuery.toLowerCase()));
+              if (isSearchingThis) {
+                pill.className = 'px-3.5 py-2 font-mono text-[9px] uppercase tracking-wider rounded-xl border border-puzzle-purple/50 bg-puzzle-purple/10 text-puzzle-purple font-bold shadow-[0_0_12px_rgba(180,137,243,0.15)] scale-102 transition-all duration-300 cursor-pointer whitespace-nowrap';
+              } else {
+                pill.className = 'px-3.5 py-2 font-mono text-[9px] uppercase tracking-wider rounded-xl border border-white/5 bg-zinc-900/40 text-white/50 hover:text-white hover:border-white/20 hover:scale-101 transition-all duration-300 cursor-pointer whitespace-nowrap';
+              }
+            });
+          }
+
+          // 5. Handle empty state check
+          if (filteredKeys.length === 0) {
+            emptyState.classList.remove('hidden');
+            portfolioGrid.classList.add('hidden');
+            listContainer.classList.add('hidden');
+            return;
+          } else {
+            emptyState.classList.add('hidden');
+          }
+
+          // 6. Handle views rendering
+          if (activeViewMode === 'grid') {
+            portfolioGrid.classList.remove('hidden');
+            listContainer.classList.add('hidden');
+
+            const gridCards = Array.from(portfolioItems);
+
+            gridCards.sort((a, b) => {
+              const aId = getCaseIdFromCard(a);
+              const bId = getCaseIdFromCard(b);
+              const indexA = filteredKeys.indexOf(aId);
+              const indexB = filteredKeys.indexOf(bId);
+
+              const valA = indexA === -1 ? 999 : indexA;
+              const valB = indexB === -1 ? 999 : indexB;
+              return valA - valB;
+            });
+
+            gridCards.forEach(card => {
+              portfolioGrid.appendChild(card);
+              const caseId = getCaseIdFromCard(card);
+              const cardIsActive = filteredKeys.includes(caseId);
+
+              const h3 = card.querySelector('h3');
+              const subtitle = card.querySelector('.font-subtitle');
+              if (h3) {
+                if (!h3.dataset.original) h3.dataset.original = h3.innerHTML;
+                h3.innerHTML = currentSearchQuery ? highlightText(h3.dataset.original, currentSearchQuery) : h3.dataset.original;
+              }
+              if (subtitle) {
+                if (!subtitle.dataset.original) subtitle.dataset.original = subtitle.innerHTML;
+                subtitle.innerHTML = currentSearchQuery ? highlightText(subtitle.dataset.original, currentSearchQuery) : subtitle.dataset.original;
+              }
+
+              if (cardIsActive) {
+                card.style.display = 'flex';
+                setTimeout(() => {
+                  card.style.opacity = '1';
+                  card.style.transform = 'translateY(0) scale(1)';
+                }, 10);
+              } else {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px) scale(0.97)';
+                setTimeout(() => {
+                  card.style.display = 'none';
+                }, 200);
+              }
+            });
+
+          } else {
+            // RENDERING TABLE / DEPLOYMENT LIST VIEW
+            portfolioGrid.classList.add('hidden');
+            listContainer.classList.remove('hidden');
+            setTimeout(() => {
+              listContainer.style.opacity = '1';
+              listContainer.style.transform = 'translateY(0)';
+            }, 10);
+
+            const tbody = document.getElementById('list-view-body');
+            tbody.innerHTML = '';
+
+            filteredKeys.forEach(key => {
+              const spec = caseSpecs[key];
+              const tr = document.createElement('tr');
+              tr.className = 'hover:bg-white/[0.02] transition-colors border-b border-white/[0.03]';
+
+              let bulletColor = 'bg-puzzle-teal shadow-[0_0_8px_#84d4d8]';
+              let badgeEl = '<span class="px-2 py-0.5 font-mono text-[8.5px] uppercase tracking-wider rounded bg-puzzle-teal/15 text-puzzle-teal border border-puzzle-teal/20 font-extrabold">SOFTWARE</span>';
+              if (spec.category === 'trafego') {
+                bulletColor = 'bg-puzzle-purple shadow-[0_0_8px_#b489f3]';
+                badgeEl = '<span class="px-2 py-0.5 font-mono text-[8.5px] uppercase tracking-wider rounded bg-puzzle-purple/15 text-puzzle-purple border border-puzzle-purple/20 font-extrabold">TRAFEGO PAGO</span>';
+              } else if (spec.category === 'lp') {
+                bulletColor = 'bg-puzzle-yellow shadow-[0_0_8px_#fdcb5d]';
+                badgeEl = '<span class="px-2 py-0.5 font-mono text-[8.5px] uppercase tracking-wider rounded bg-puzzle-yellow/15 text-puzzle-yellow border border-puzzle-yellow/20 font-extrabold">LP</span>';
+              } else if (spec.category === 'dooh') {
+                bulletColor = 'bg-puzzle-pink shadow-[0_0_8px_#f06465]';
+                badgeEl = '<span class="px-2 py-0.5 font-mono text-[8.5px] uppercase tracking-wider rounded bg-puzzle-pink/15 text-puzzle-pink border border-puzzle-pink/20 font-extrabold">DOOH</span>';
+              }
+
+              const techBadges = spec.tech.map(t => `<span class="px-2 py-0.5 bg-zinc-900 border border-white/5 font-mono text-[8.5px] text-zinc-400 rounded uppercase whitespace-nowrap">${highlightText(t, currentSearchQuery)}</span>`).join(' ');
+
+              tr.innerHTML = `
+                <td class="py-4.5 px-6 font-mono text-[9.5px] tracking-widest text-zinc-500">
+                  ${spec.proto}
+                </td>
+                <td class="py-4.5 px-6">
+                  <div class="flex items-center gap-3.5">
+                    <div class="w-1.5 h-1.5 rounded-full ${bulletColor}"></div>
+                    <div>
+                      <span class="font-title text-sm text-white font-bold block">${highlightText(spec.title, currentSearchQuery)}</span>
+                      <span class="inline-block mt-1">${badgeEl}</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="py-4.5 px-6">
+                  <span class="font-title text-zinc-200 font-bold block text-sm">${highlightText(spec.metric, currentSearchQuery)}</span>
+                  <span class="font-mono text-[9px] text-zinc-500 uppercase tracking-wide block mt-0.5">${highlightText(spec.submetric, currentSearchQuery)}</span>
+                </td>
+                <td class="py-4.5 px-6">
+                  <div class="flex flex-wrap gap-1.5 max-w-xs md:max-w-md">
+                    ${techBadges}
+                  </div>
+                </td>
+                <td class="py-4.5 px-6 font-mono text-[9.5px] text-zinc-400">
+                  <div class="space-y-1">
+                    <p><span class="text-zinc-600">DB:</span> ${highlightText(spec.db, currentSearchQuery)}</p>
+                    <p><span class="text-zinc-600">SLA:</span> ${highlightText(spec.sla, currentSearchQuery)}</p>
+                  </div>
+                </td>
+                <td class="py-4.5 px-6 text-right">
+                  <div class="flex items-center justify-end gap-2.5">
+                    <button 
+                      onclick="openInspector('${key}')" 
+                      class="bg-zinc-900 hover:bg-white text-zinc-300 hover:text-black border border-white/10 hover:border-white py-1.5 px-3.5 rounded-xl text-[9px] font-mono font-bold uppercase transition-all duration-300 flex items-center gap-1.5 cursor-pointer"
+                    >
+                      <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
+                      <span>Inspecionar</span>
+                    </button>
+                    <a 
+                      href="${spec.url}" 
+                      target="_blank" 
+                      class="w-8.5 h-8.5 bg-zinc-900/60 hover:bg-white text-white hover:text-black border border-white/10 rounded-xl flex items-center justify-center transition-all duration-300"
+                      title="Visitar URL"
+                    >
+                      <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                    </a>
+                  </div>
+                </td>
+              `;
+              tbody.appendChild(tr);
+            });
+            if (typeof lucide !== 'undefined') {
+              lucide.createIcons();
+            }
+          }
+
+          // Dynamic Filters Colors Accent Updates
+          filterButtons.forEach(btn => {
+            const btnVal = btn.dataset.filter;
+            if (btnVal === currentFilter) {
+              btn.className = `px-5 py-3 font-mono text-[10px] font-bold uppercase tracking-widest rounded-xl transition-all duration-300 border bg-white text-zinc-950 border-white cursor-pointer hover:scale-102 filter-btn`;
+              if (btnVal === 'software') {
+                btn.style.boxShadow = '0 0 15px rgba(132, 212, 216, 0.35)';
+              } else if (btnVal === 'lp') {
+                btn.style.boxShadow = '0 0 15px rgba(253, 203, 93, 0.35)';
+              } else if (btnVal === 'trafego') {
+                btn.style.boxShadow = '0 0 15px rgba(180, 137, 243, 0.35)';
+              } else if (btnVal === 'dooh') {
+                btn.style.boxShadow = '0 0 15px rgba(240, 100, 101, 0.35)';
+              } else {
+                btn.style.boxShadow = 'none';
+              }
+            } else {
+              btn.className = `px-5 py-3 font-mono text-[10px] font-bold uppercase tracking-widest rounded-xl transition-all duration-300 border border-white/10 hover:border-white/30 text-white/60 hover:text-white cursor-pointer hover:scale-102 filter-btn`;
+              btn.style.boxShadow = 'none';
+            }
+          });
+        };
+
+        // Listen for filter category buttons
+        filterButtons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            currentFilter = btn.dataset.filter;
+            updateGrid();
+          });
+        });
+
+        // Search Input listeners
+        if (searchInput) {
+          searchInput.addEventListener('input', (e) => {
+            currentSearchQuery = e.target.value.trim();
+            updateGrid();
+          });
+        }
+
+        // Sort Control selectors
+        if (sortSelector) {
+          sortSelector.addEventListener('change', (e) => {
+            currentSort = e.target.value;
+            updateGrid();
+          });
+        }
+
+        // View Mode buttons Toggles
+        if (viewGridBtn && viewListBtn) {
+          viewGridBtn.addEventListener('click', () => {
+            activeViewMode = 'grid';
+            viewGridBtn.className = 'px-3.5 py-1.5 font-mono text-[9px] font-bold uppercase tracking-wider rounded-lg transition-all duration-300 cursor-pointer flex items-center gap-1.5 bg-white text-zinc-950 border border-transparent shadow';
+            viewListBtn.className = 'px-3.5 py-1.5 font-mono text-[9px] font-bold uppercase tracking-wider rounded-lg transition-all duration-300 cursor-pointer flex items-center gap-1.5 text-zinc-500 hover:text-white border border-transparent';
+            updateGrid();
+          });
+
+          viewListBtn.addEventListener('click', () => {
+            activeViewMode = 'table';
+            viewListBtn.className = 'px-3.5 py-1.5 font-mono text-[9px] font-bold uppercase tracking-wider rounded-lg transition-all duration-300 cursor-pointer flex items-center gap-1.5 bg-white text-zinc-950 border border-transparent shadow';
+            viewGridBtn.className = 'px-3.5 py-1.5 font-mono text-[9px] font-bold uppercase tracking-wider rounded-lg transition-all duration-300 cursor-pointer flex items-center gap-1.5 text-zinc-500 hover:text-white border border-transparent';
+            updateGrid();
+          });
+        }
+
+        // Reset Filter buttons action
+        if (resetFiltersBtn) {
+          resetFiltersBtn.addEventListener('click', () => {
+            currentFilter = 'all';
+            currentSearchQuery = '';
+            currentSort = 'relevant';
+            if (searchInput) searchInput.value = '';
+            if (sortSelector) sortSelector.value = 'relevant';
+            updateGrid();
+          });
+        }
+
+        // Search query check on page load from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const urlFilter = urlParams.get('filter');
+        if (urlFilter && ['software', 'lp', 'trafego'].includes(urlFilter)) {
+          currentFilter = urlFilter;
+        } else {
+          currentFilter = 'all';
+        }
+        updateGrid();
+      });
+    </script>
+  </body>
+</html>
+
+
+

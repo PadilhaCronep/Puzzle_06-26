@@ -1,0 +1,8 @@
+{
+  "name": "PUZZLE - Elite Tech & Growth Strategy",
+  "description": "A high-end marketing and software development agency. Specialized in Marketing Architecture, Software Engineering, Consulting, and DOOH Intelligence. (Static HTML/CSS/JS Version)",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
