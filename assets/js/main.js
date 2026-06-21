@@ -189,9 +189,10 @@
                 .privacy-consent-actions a{border:1px solid rgba(255,255,255,.13);color:#84d4d8}
                 .privacy-consent-actions button{cursor:pointer;background:#fff;color:#09090b}
                 .privacy-form-consent{display:grid;grid-template-columns:1.05rem minmax(0,1fr);gap:.65rem;align-items:start;margin:.8rem 0 1rem;border:1px solid rgba(255,255,255,.08);border-radius:1rem;background:rgba(255,255,255,.03);padding:.85rem;color:rgba(255,255,255,.62);font-family:Outfit,sans-serif;font-size:.78rem;line-height:1.4}
-                .privacy-form-consent input{width:1.05rem;height:1.05rem;margin-top:.1rem;accent-color:#84d4d8}
+                .privacy-form-consent input{width:1.05rem;height:1.05rem;min-height:1.05rem;margin-top:.1rem;accent-color:#84d4d8}
+                .privacy-form-consent span{min-width:0;overflow-wrap:anywhere}
                 .privacy-form-consent a{color:#84d4d8;text-decoration:underline;text-underline-offset:3px}
-                @media(max-width:767px){.privacy-consent-banner{right:.75rem;bottom:.75rem;left:.75rem;width:auto;grid-template-columns:1fr;border-radius:1rem;padding:.9rem}.privacy-consent-actions{justify-content:space-between}.privacy-consent-actions a,.privacy-consent-actions button{flex:1}}
+                @media(max-width:767px){.privacy-consent-banner{right:.75rem;bottom:.75rem;left:.75rem;width:auto;grid-template-columns:1fr;border-radius:1rem;padding:.9rem}.privacy-consent-actions{justify-content:space-between}.privacy-consent-actions a,.privacy-consent-actions button{flex:1}.whatsapp-form .privacy-form-consent{width:100%;grid-template-columns:1.15rem minmax(0,1fr);grid-column:1/-1;margin:.35rem 0 .2rem;padding:.82rem;border-radius:.9rem;font-size:.72rem;line-height:1.42}.whatsapp-form .privacy-form-consent input{width:1.05rem!important;height:1.05rem!important;min-height:1.05rem!important;padding:0!important;border-radius:.2rem!important}}
             `;
             document.head.appendChild(privacyCss);
         }
@@ -236,6 +237,102 @@
     };
 
     setupPrivacyCompliance();
+
+    const setupPuzzleCtaPopup = () => {
+        const popupKey = 'puzzle_contact_cta_popup_seen_at_v1';
+        const cooldownMs = 48 * 60 * 60 * 1000;
+        const delayMs = 3000;
+        const now = Date.now();
+        const lastSeen = Number(localStorage.getItem(popupKey) || 0);
+
+        if (lastSeen && now - lastSeen < cooldownMs) return;
+        if (document.querySelector('.puzzle-cta-popup')) return;
+
+        if (!document.querySelector('style[data-puzzle-cta-popup-css]')) {
+            const popupCss = document.createElement('style');
+            popupCss.dataset.puzzleCtaPopupCss = 'true';
+            popupCss.textContent = `
+                .puzzle-cta-popup{position:fixed;inset:0;z-index:99998;display:grid;place-items:center;padding:1rem;background:rgba(5,5,8,.72);opacity:0;pointer-events:none;transition:opacity .24s ease}
+                .puzzle-cta-popup.is-open{opacity:1;pointer-events:auto}
+                .puzzle-cta-popup__panel{position:relative;width:min(30rem,100%);overflow:hidden;border:1px solid rgba(255,255,255,.12);border-radius:1.25rem;background:linear-gradient(145deg,rgba(18,18,24,.98),rgba(8,8,12,.98));box-shadow:0 30px 90px rgba(0,0,0,.62);color:#fff;transform:translateY(12px) scale(.98);transition:transform .24s ease}
+                .puzzle-cta-popup.is-open .puzzle-cta-popup__panel{transform:translateY(0) scale(1)}
+                .puzzle-cta-popup__edge{height:4px;background:linear-gradient(90deg,#84d4d8,#fdcb5d,#f06465)}
+                .puzzle-cta-popup__body{padding:1.35rem}
+                .puzzle-cta-popup__close{position:absolute;top:.85rem;right:.85rem;display:inline-grid;width:2.3rem;height:2.3rem;place-items:center;border:1px solid rgba(255,255,255,.12);border-radius:.85rem;background:rgba(255,255,255,.04);color:rgba(255,255,255,.72);cursor:pointer}
+                .puzzle-cta-popup__kicker{display:block;margin-bottom:.7rem;color:#84d4d8;font-family:"Space Mono",monospace;font-size:.58rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+                .puzzle-cta-popup h2{max-width:22rem;margin:0 2.5rem .75rem 0;font-family:Poppins,sans-serif;font-size:clamp(1.75rem,5vw,2.45rem);line-height:.96;font-weight:800;letter-spacing:0;text-transform:uppercase}
+                .puzzle-cta-popup p{margin:0;color:rgba(255,255,255,.64);font-size:.95rem;line-height:1.5}
+                .puzzle-cta-popup__services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.55rem;margin:1.1rem 0}
+                .puzzle-cta-popup__services span{min-height:2.8rem;display:grid;place-items:center;border:1px solid rgba(255,255,255,.09);border-radius:.85rem;background:rgba(255,255,255,.035);padding:.55rem;color:rgba(255,255,255,.72);font-family:"Space Mono",monospace;font-size:.55rem;font-weight:700;letter-spacing:.08em;line-height:1.25;text-align:center;text-transform:uppercase}
+                .puzzle-cta-popup__actions{display:grid;grid-template-columns:1fr auto;gap:.65rem;align-items:center;margin-top:1rem}
+                .puzzle-cta-popup__primary,.puzzle-cta-popup__secondary{display:inline-flex;min-height:3rem;align-items:center;justify-content:center;gap:.5rem;border-radius:.9rem;padding:.85rem 1rem;font-family:"Space Mono",monospace;font-size:.62rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
+                .puzzle-cta-popup__primary{background:#84d4d8;color:#09090b}
+                .puzzle-cta-popup__secondary{border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.68);background:rgba(255,255,255,.03)}
+                @media(max-width:767px){.puzzle-cta-popup{align-items:end;padding:.75rem}.puzzle-cta-popup__panel{border-radius:1rem}.puzzle-cta-popup__body{padding:1.05rem}.puzzle-cta-popup h2{margin-right:2.4rem;font-size:1.72rem;line-height:1}.puzzle-cta-popup p{font-size:.86rem}.puzzle-cta-popup__services{grid-template-columns:1fr;gap:.45rem}.puzzle-cta-popup__services span{min-height:2.35rem;justify-items:start;text-align:left}.puzzle-cta-popup__actions{grid-template-columns:1fr}.puzzle-cta-popup__secondary{order:2}.puzzle-cta-popup__primary,.puzzle-cta-popup__secondary{width:100%;min-height:2.85rem}}
+            `;
+            document.head.appendChild(popupCss);
+        }
+
+        const popup = document.createElement('div');
+        popup.className = 'puzzle-cta-popup';
+        popup.setAttribute('role', 'dialog');
+        popup.setAttribute('aria-modal', 'true');
+        popup.setAttribute('aria-labelledby', 'puzzle-cta-popup-title');
+        popup.innerHTML = `
+            <div class="puzzle-cta-popup__panel">
+                <div class="puzzle-cta-popup__edge"></div>
+                <button class="puzzle-cta-popup__close" type="button" aria-label="Fechar pop-up">
+                    <i data-lucide="x" class="w-4 h-4"></i>
+                </button>
+                <div class="puzzle-cta-popup__body">
+                    <span class="puzzle-cta-popup__kicker">Puzzle Systems</span>
+                    <h2 id="puzzle-cta-popup-title">Vamos desenhar seu proximo passo?</h2>
+                    <p>Fale com a Puzzle para estruturar uma operacao mais forte em software sob medida, marketing de performance e midia DOOH.</p>
+                    <div class="puzzle-cta-popup__services" aria-label="Servicos principais">
+                        <span>Software e SaaS</span>
+                        <span>Marketing de performance</span>
+                        <span>DOOH e midia urbana</span>
+                    </div>
+                    <div class="puzzle-cta-popup__actions">
+                        <a class="puzzle-cta-popup__primary" href="contato.html">
+                            Fale conosco
+                            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                        </a>
+                        <a class="puzzle-cta-popup__secondary" href="https://wa.me/5515996135084" target="_blank" rel="noopener">
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        const closePopup = () => {
+            popup.classList.remove('is-open');
+            document.body.style.overflow = '';
+            window.setTimeout(() => popup.remove(), 260);
+            document.removeEventListener('keydown', onKeydown);
+        };
+
+        const onKeydown = (event) => {
+            if (event.key === 'Escape') closePopup();
+        };
+
+        window.setTimeout(() => {
+            localStorage.setItem(popupKey, String(Date.now()));
+            document.body.appendChild(popup);
+            renderIcons();
+            window.requestAnimationFrame(() => popup.classList.add('is-open'));
+            document.body.style.overflow = 'hidden';
+            document.addEventListener('keydown', onKeydown);
+        }, delayMs);
+
+        popup.querySelector('.puzzle-cta-popup__close')?.addEventListener('click', closePopup);
+        popup.addEventListener('click', (event) => {
+            if (event.target === popup) closePopup();
+        });
+    };
+
+    setupPuzzleCtaPopup();
 
     // Browser-level image hints for older markup and injected portfolio cards.
     document.querySelectorAll('img').forEach((img, index) => {
